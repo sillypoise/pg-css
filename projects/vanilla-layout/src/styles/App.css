@@ -285,7 +285,7 @@ textarea:disabled {
 :where(hr) {
     background-color: var(--surface-3);
     height: var(--border-size-2);
-    margin-block: var(--space-3xl);
+    margin-block: var(--space-2xl);
 }
 :where(figure) {
     display: grid;

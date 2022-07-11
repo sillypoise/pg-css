@@ -2,15 +2,12 @@ import { useState } from "react";
 import "./props.css";
 import "./reset.css";
 import "./Normalize.css";
+import "./layout.css";
 // import "./buttons.css";
 
 function App() {
     return (
-        <div
-            id="top"
-            role="document"
-            className="center stack-gap-recursive:mbs-sm | debug"
-        >
+        <div id="top" role="document" className="stack">
             <header role="banner">
                 <div>
                     {/* <svg viewBox="0 0 200 200">
@@ -40,7 +37,7 @@ function App() {
                     too. Try out a{" "}
                     <a href="http://localhost:3001">visited link</a>
                 </p>
-                <div>
+                <div className="stack">
                     <h4>Included adaptive props</h4>
                     <h3>4 Surface Colors</h3>
                     <p>
@@ -48,7 +45,7 @@ function App() {
                         When you want to change the perception of layering and
                         grouping.
                     </p>
-                    <div>
+                    <div className="stack">
                         <div>var(--surface-1)</div>
                         <div>var(--surface-2)</div>
                         <div>var(--surface-3)</div>
@@ -56,7 +53,7 @@ function App() {
                     </div>
                 </div>
 
-                <div>
+                <div className="stack">
                     <h3>2 Text Colors, 2 link colors</h3>
                     <h5>
                         <span></span>
@@ -186,10 +183,10 @@ function App() {
                     </li>
                 </ul>
             </nav>
-            <main role="main">
-                <section id="text">
-                    <article id="text__headings">
-                        <div>
+            <main role="main" className="stack">
+                <section id="text" className="stack">
+                    <article id="text__headings" className="stack">
+                        <div className="stack">
                             <h1>Heading 1</h1>
                             <h2>Heading 2</h2>
                             <h3>Heading 3</h3>
@@ -198,7 +195,7 @@ function App() {
                             <h6>Heading 6</h6>
                         </div>
                     </article>
-                    <article id="text__paragraphs">
+                    <article id="text__paragraphs" className="stack">
                         <header>
                             <h1>Paragraphs</h1>
                         </header>
@@ -216,7 +213,7 @@ function App() {
                             </p>
                         </div>
                     </article>
-                    <article id="text__blockquotes">
+                    <article id="text__blockquotes" className="stack">
                         <header>
                             <h1>Blockquotes</h1>
                         </header>
@@ -241,11 +238,11 @@ function App() {
                             </blockquote>
                         </div>
                     </article>
-                    <article id="text__lists">
+                    <article id="text__lists" className="stack">
                         <header>
                             <h1>Lists</h1>
                         </header>
-                        <div>
+                        <div className="stack">
                             <h3>Definition list</h3>
                             <dl>
                                 <dt>Definition List Title</dt>
@@ -277,7 +274,7 @@ function App() {
                             </details>
                         </div>
                     </article>
-                    <article id="text__hr">
+                    <article id="text__hr" className="stack">
                         <header>
                             <h1>Horizontal rules</h1>
                         </header>
@@ -341,11 +338,11 @@ function App() {
                             </tbody>
                         </table>
                     </article>
-                    <article id="text__code">
+                    <article id="text__code" className="stack">
                         <header>
                             <h1>Code</h1>
                         </header>
-                        <div>
+                        <div className="stack">
                             <p>
                                 <strong>Keyboard input:</strong> <kbd>Cmd</kbd>
                             </p>
@@ -370,11 +367,11 @@ function App() {
                             </pre>
                         </div>
                     </article>
-                    <article id="text__inline">
+                    <article id="text__inline" className="stack">
                         <header>
                             <h1>Inline elements</h1>
                         </header>
-                        <div>
+                        <div className="stack">
                             <p>
                                 <a href="#!">This is a text link</a>.
                             </p>
@@ -468,7 +465,7 @@ function App() {
                             </code>
                         </div>
                     </article>
-                    <article id="text__comments">
+                    <article id="text__comments" className="stack">
                         <header>
                             <h1>HTML Comments</h1>
                         </header>
@@ -482,15 +479,15 @@ function App() {
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
                     </article>
                 </section>
-                <section id="embedded">
+                <section id="embedded" className="stack">
                     <header>
                         <h1>Embedded content</h1>
                     </header>
-                    <article id="embedded__images">
+                    <article id="embedded__images" className="stack">
                         <header>
                             <h2>Images</h2>
                         </header>
-                        <div>
+                        <div className="stack">
                             <h5>
                                 No <code>&lt;figure&gt;</code> element
                             </h5>
@@ -525,7 +522,7 @@ function App() {
                             </figure>
                         </div>
                     </article>
-                    <article id="embedded__audio">
+                    <article id="embedded__audio" className="stack">
                         <header>
                             <h2>Audio</h2>
                         </header>
@@ -533,7 +530,7 @@ function App() {
                             <audio controls>audio</audio>
                         </div>
                     </article>
-                    <article id="embedded__video">
+                    <article id="embedded__video" className="stack">
                         <header>
                             <h2>Video</h2>
                         </header>
@@ -541,7 +538,7 @@ function App() {
                             <video controls>video</video>
                         </div>
                     </article>
-                    <article id="embedded__canvas">
+                    <article id="embedded__canvas" className="stack">
                         <header>
                             <h2>Canvas</h2>
                         </header>
@@ -549,7 +546,7 @@ function App() {
                             <canvas>canvas</canvas>
                         </div>
                     </article>
-                    <article id="embedded__meter">
+                    <article id="embedded__meter" className="stack">
                         <header>
                             <h2>Meter</h2>
                         </header>
@@ -559,7 +556,7 @@ function App() {
                             </meter>
                         </div>
                     </article>
-                    <article id="embedded__progress">
+                    <article id="embedded__progress" className="stack">
                         <header>
                             <h2>Progress</h2>
                         </header>
@@ -567,7 +564,7 @@ function App() {
                             <progress defaultValue=".5">progress</progress>
                         </div>
                     </article>
-                    <article id="embedded__svg">
+                    <article id="embedded__svg" className="stack">
                         <header>
                             <h2>Inline SVG</h2>
                         </header>
@@ -582,7 +579,7 @@ function App() {
                             </svg>
                         </div>
                     </article>
-                    <article id="embedded__iframe">
+                    <article id="embedded__iframe" className="stack">
                         <header>
                             <h2>IFrame</h2>
                         </header>
@@ -595,12 +592,12 @@ function App() {
                         </div>
                     </article>
                 </section>
-                <section id="forms">
+                <section id="forms" className="stack">
                     <header>
                         <h1>Form elements</h1>
                     </header>
-                    <form>
-                        <fieldset id="forms__input">
+                    <form className="stack">
+                        <fieldset id="forms__input" className="stack">
                             <legend>Input fields</legend>
                             <p>
                                 <label htmlFor="input__text">Text Input</label>
@@ -685,7 +682,7 @@ function App() {
                                 />
                             </p>
                         </fieldset>
-                        <fieldset id="forms__select">
+                        <fieldset id="forms__select" className="stack">
                             <legend>Select menus</legend>
                             <p>
                                 <label htmlFor="select">Select</label>
@@ -708,7 +705,7 @@ function App() {
                                 </select>
                             </p>
                         </fieldset>
-                        <fieldset id="forms__checkbox">
+                        <fieldset id="forms__checkbox" className="stack">
                             <legend>Checkboxes</legend>
                             <ul>
                                 <li>
@@ -744,7 +741,7 @@ function App() {
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset id="forms__radio">
+                        <fieldset id="forms__radio" className="stack">
                             <legend>Radio buttons</legend>
                             <ul>
                                 <li>
@@ -780,7 +777,7 @@ function App() {
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset id="forms__textareas">
+                        <fieldset id="forms__textareas" className="stack">
                             <legend>Textareas</legend>
                             <p>
                                 <label htmlFor="textarea">Textarea</label>
@@ -792,7 +789,7 @@ function App() {
                                 ></textarea>
                             </p>
                         </fieldset>
-                        <fieldset id="forms__html5">
+                        <fieldset id="forms__html5" className="stack">
                             <legend>HTML5 inputs</legend>
                             <p>
                                 <label htmlFor="ic">Color input</label>
@@ -867,8 +864,7 @@ function App() {
                                 />
                             </p>
                         </fieldset>
-
-                        <fieldset id="forms__action">
+                        <fieldset id="forms__action" className="stack">
                             <legend>Action buttons</legend>
                             <p>
                                 <input

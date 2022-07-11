@@ -1,2 +1,3 @@
 pacakges:
-    - "Projects/Vanilla-Normalise/**"
+    - "projects/vanilla-normalize/**"
+    - "projects/vanilla-layout/**"

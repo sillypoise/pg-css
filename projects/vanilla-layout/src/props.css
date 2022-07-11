@@ -1,0 +1,789 @@
+/* FLUID TYPE AND SPACE SCALE */
+:where(html) {
+    /* FLUID TYPE SCALE */
+    /* 16-16_1.2-1.25 */
+    --step--2: clamp(0.64rem, calc(0.71rem + -0.08vw), 0.69rem);
+    --step--1: clamp(0.8rem, calc(0.84rem + -0.05vw), 0.83rem);
+    --step-0: clamp(1rem, calc(1rem + 0vw), 1rem);
+    --step-1: clamp(1.2rem, calc(1.19rem + 0.07vw), 1.25rem);
+    --step-2: clamp(1.44rem, calc(1.41rem + 0.18vw), 1.56rem);
+    --step-3: clamp(1.73rem, calc(1.66rem + 0.32vw), 1.95rem);
+    --step-4: clamp(2.07rem, calc(1.97rem + 0.53vw), 2.44rem);
+    --step-5: clamp(2.49rem, calc(2.33rem + 0.81vw), 3.05rem);
+    --step-6: clamp(2.99rem, calc(2.75rem + 1.18vw), 3.82rem);
+    --step-7: clamp(3.58rem, calc(3.24rem + 1.69vw), 4.77rem);
+
+    --space-3xs: clamp(0.25rem, calc(0.25rem + 0vw), 0.25rem);
+    --space-2xs: clamp(0.5rem, calc(0.5rem + 0vw), 0.5rem);
+    --space-xs: clamp(0.75rem, calc(0.75rem + 0vw), 0.75rem);
+    --space-s: clamp(1rem, calc(1rem + 0vw), 1rem);
+    --space-m: clamp(1.5rem, calc(1.5rem + 0vw), 1.5rem);
+    --space-l: clamp(2rem, calc(2rem + 0vw), 2rem);
+    --space-xl: clamp(3rem, calc(3rem + 0vw), 3rem);
+    --space-2xl: clamp(4rem, calc(4rem + 0vw), 4rem);
+    --space-3xl: clamp(6rem, calc(6rem + 0vw), 6rem);
+    --space-4xl: clamp(8rem, calc(8rem + 0vw), 8rem);
+    --space-5xl: clamp(12rem, calc(12rem + 0vw), 12rem);
+    --space-6xl: clamp(16rem, calc(16rem + 0vw), 16rem);
+
+    /* FLUID SPACE SCALE */
+    /* 16-16 */
+    /* ONE-UP PAIRS */
+    --space-3xs-2xs: clamp(0.25rem, calc(0.18rem + 0.36vw), 0.5rem);
+    --space-2xs-xs: clamp(0.5rem, calc(0.43rem + 0.36vw), 0.75rem);
+    --space-xs-s: clamp(0.75rem, calc(0.68rem + 0.36vw), 1rem);
+    --space-s-m: clamp(1rem, calc(0.86rem + 0.71vw), 1.5rem);
+    --space-m-l: clamp(1.5rem, calc(1.36rem + 0.71vw), 2rem);
+    --space-l-xl: clamp(2rem, calc(1.71rem + 1.43vw), 3rem);
+    --space-xl-2xl: clamp(3rem, calc(2.71rem + 1.43vw), 4rem);
+    --space-2xl-3xl: clamp(4rem, calc(3.43rem + 2.86vw), 6rem);
+    --space-3xl-4xl: clamp(6rem, calc(5.43rem + 2.86vw), 8rem);
+    --space-4xl-5xl: clamp(8rem, calc(6.86rem + 5.71vw), 12rem);
+    --space-5xl-6xl: clamp(12rem, calc(10.86rem + 5.71vw), 16rem);
+
+    /* TWO-UP PAIRS */
+    --space-3xs-xs: clamp(0.25rem, calc(0.11rem + 0.71vw), 0.75rem);
+    --space-2xs-s: clamp(0.5rem, calc(0.36rem + 0.71vw), 1rem);
+    --space-xs-m: clamp(0.75rem, calc(0.54rem + 1.07vw), 1.5rem);
+    --space-s-l: clamp(1rem, calc(0.71rem + 1.43vw), 2rem);
+    --space-m-xl: clamp(1.5rem, calc(1.07rem + 2.14vw), 3rem);
+    --space-l-xl: clamp(2rem, calc(1.71rem + 1.43vw), 3rem);
+    --space-xl-3xl: clamp(3rem, calc(2.14rem + 4.29vw), 6rem);
+    --space-2xl-4xl: clamp(4rem, calc(2.86rem + 5.71vw), 8rem);
+    --space-3xl-5xl: clamp(6rem, calc(4.29rem + 8.57vw), 12rem);
+    --space-4xl-6xl: clamp(8rem, calc(5.71rem + 11.43vw), 16rem);
+
+    /* THREE-UP PAIRS */
+    --space-3xs-s: clamp(0.25rem, calc(0.04rem + 1.07vw), 1rem);
+    --space-2xs-m: clamp(0.5rem, calc(0.21rem + 1.43vw), 1.5rem);
+    --space-xs-l: clamp(0.75rem, calc(0.39rem + 1.79vw), 2rem);
+    --space-s-xl: clamp(1rem, calc(0.43rem + 2.86vw), 3rem);
+    --space-m-2xl: clamp(1.5rem, calc(0.79rem + 3.57vw), 4rem);
+    --space-l-3xl: clamp(2rem, calc(0.86rem + 5.71vw), 6rem);
+    --space-xl-4xl: clamp(3rem, calc(1.57rem + 7.14vw), 8rem);
+    --space-2xl-5xl: clamp(4rem, calc(1.71rem + 11.43vw), 12rem);
+    --space-3xl-6xl: clamp(6rem, calc(3.14rem + 14.29vw), 16rem);
+
+    /* FOUR-UP PAIRS */
+    --space-3xs-m: clamp(0.25rem, calc(-0.11rem + 1.79vw), 1.5rem);
+    --space-2xs-l: clamp(0.5rem, calc(0.07rem + 2.14vw), 2rem);
+    --space-xs-xl: clamp(0.75rem, calc(0.11rem + 3.21vw), 3rem);
+    --space-s-2xl: clamp(1rem, calc(0.14rem + 4.29vw), 4rem);
+    --space-m-3xl: clamp(1.5rem, calc(0.21rem + 6.43vw), 6rem);
+    --space-l-4xl: clamp(2rem, calc(0.29rem + 8.57vw), 8rem);
+    --space-xl-5xl: clamp(3rem, calc(0.43rem + 12.86vw), 12rem);
+    --space-2xl-6xl: clamp(4rem, calc(0.57rem + 17.14vw), 16rem);
+
+    /* FIVE-UP PAIRS */
+    --space-3xs-l: clamp(0.25rem, calc(-0.25rem + 2.5vw), 2rem);
+    --space-2xs-xl: clamp(0.5rem, calc(-0.21rem + 3.57vw), 3rem);
+    --space-xs-2xl: clamp(0.75rem, calc(-0.18rem + 4.64vw), 4rem);
+    --space-s-3xl: clamp(1rem, calc(-0.43rem + 7.14vw), 6rem);
+    --space-m-4xl: clamp(1.5rem, calc(-0.36rem + 9.29vw), 8rem);
+    --space-l-5xl: clamp(2rem, calc(-0.86rem + 14.29vw), 12rem);
+    --space-xl-6xl: clamp(3rem, calc(-0.71rem + 18.57vw), 16rem);
+}
+
+/* BASE COLORS */
+:where(html) {
+    --slate-50: hsl(210 40% 98%);
+    --slate-100: hsl(210 40% 96%);
+    --slate-200: hsl(214 32% 91%);
+    --slate-300: hsl(213 27% 84%);
+    --slate-400: hsl(215 20% 65%);
+    --slate-500: hsl(215 16% 47%);
+    --slate-600: hsl(215 19% 35%);
+    --slate-700: hsl(215 25% 27%);
+    --slate-800: hsl(217 33% 17%);
+    --slate-900: hsl(222 47% 14%);
+    --slate-950: hsl(224 45% 12%);
+    --slate-980: hsl(225 43% 11%);
+    --slate-990: hsl(225 41% 9%);
+    --slate-1000: hsl(225 40% 7%);
+    --gray-50: hsl(210 20% 98%);
+    --gray-100: hsl(220 14% 96%);
+    --gray-200: hsl(220 13% 91%);
+    --gray-300: hsl(216 12% 84%);
+    --gray-400: hsl(218 11% 65%);
+    --gray-500: hsl(220 9% 46%);
+    --gray-600: hsl(215 14% 34%);
+    --gray-700: hsl(217 19% 27%);
+    --gray-800: hsl(215 28% 17%);
+    --gray-900: hsl(221 39% 11%);
+    --gray-950: hsl(220 37% 10%);
+    --gray-980: hsl(220 35% 10%);
+    --gray-990: hsl(220 35% 9%);
+    --gray-1000: hsl(220 30% 9%);
+    --zinc-50: hsl(0 0% 98%);
+    --zinc-100: hsl(240 5% 96%);
+    --zinc-200: hsl(240 6% 90%);
+    --zinc-300: hsl(240 5% 84%);
+    --zinc-400: hsl(240 5% 65%);
+    --zinc-500: hsl(240 4% 46%);
+    --zinc-600: hsl(240 5% 34%);
+    --zinc-700: hsl(240 5% 26%);
+    --zinc-800: hsl(240 4% 16%);
+    --zinc-900: hsl(240 6% 10%);
+    --neutral-50: hsl(0 0% 98%);
+    --neutral-100: hsl(0 0% 96%);
+    --neutral-200: hsl(0 0% 90%);
+    --neutral-300: hsl(0 0% 83%);
+    --neutral-400: hsl(0 0% 64%);
+    --neutral-500: hsl(0 0% 45%);
+    --neutral-600: hsl(0 0% 32%);
+    --neutral-700: hsl(0 0% 25%);
+    --neutral-800: hsl(0 0% 18%);
+    --neutral-900: hsl(0 0% 15%);
+    --neutral-950: hsl(0 0% 13%);
+    --neutral-980: hsl(0 0% 10%);
+    --neutral-990: hsl(0 0% 8%);
+    --neutral-1000: hsl(0 0% 6%);
+    --stone-50: hsl(60 9% 98%);
+    --stone-100: hsl(60 5% 96%);
+    --stone-200: hsl(20 6% 90%);
+    --stone-300: hsl(24 6% 83%);
+    --stone-400: hsl(24 5% 64%);
+    --stone-500: hsl(25 5% 45%);
+    --stone-600: hsl(33 5% 32%);
+    --stone-700: hsl(30 6% 25%);
+    --stone-800: hsl(12 6% 15%);
+    --stone-900: hsl(24 10% 10%);
+    --red-50: hsl(0 86% 97%);
+    --red-100: hsl(0 93% 94%);
+    --red-200: hsl(0 96% 89%);
+    --red-300: hsl(0 94% 82%);
+    --red-400: hsl(0 91% 71%);
+    --red-500: hsl(0 84% 60%);
+    --red-600: hsl(0 72% 51%);
+    --red-700: hsl(0 74% 42%);
+    --red-800: hsl(0 70% 35%);
+    --red-900: hsl(0 63% 31%);
+    --red-950: hsl(0 60% 29%);
+    --red-980: hsl(0 55% 22%);
+    --red-990: hsl(0 55% 13%);
+    --red-1000: hsl(0 55% 12%);
+    --orange-50: hsl(33 100% 96%);
+    --orange-100: hsl(34 100% 92%);
+    --orange-200: hsl(32 98% 83%);
+    --orange-300: hsl(31 97% 72%);
+    --orange-400: hsl(27 96% 61%);
+    --orange-500: hsl(25 95% 53%);
+    --orange-600: hsl(21 90% 48%);
+    --orange-700: hsl(17 88% 40%);
+    --orange-800: hsl(15 79% 34%);
+    --orange-900: hsl(15 75% 28%);
+    --orange-950: hsl(15 72% 25%);
+    --orange-980: hsl(15 70% 20%);
+    --orange-990: hsl(15 60% 15%);
+    --orange-1000: hsl(15 55% 10%);
+    --amber-50: hsl(48 100% 96%);
+    --amber-100: hsl(48 96% 89%);
+    --amber-200: hsl(48 97% 77%);
+    --amber-300: hsl(46 97% 65%);
+    --amber-400: hsl(43 96% 56%);
+    --amber-500: hsl(38 92% 50%);
+    --amber-600: hsl(32 95% 44%);
+    --amber-700: hsl(26 90% 37%);
+    --amber-800: hsl(23 83% 31%);
+    --amber-900: hsl(22 78% 26%);
+    --yellow-50: hsl(55 92% 95%);
+    --yellow-100: hsl(55 97% 88%);
+    --yellow-200: hsl(53 98% 77%);
+    --yellow-300: hsl(50 98% 64%);
+    --yellow-400: hsl(48 96% 53%);
+    --yellow-500: hsl(45 93% 47%);
+    --yellow-600: hsl(41 96% 40%);
+    --yellow-700: hsl(35 92% 33%);
+    --yellow-800: hsl(32 81% 29%);
+    --yellow-900: hsl(28 73% 26%);
+    --lime-50: hsl(78 92% 95%);
+    --lime-100: hsl(80 89% 89%);
+    --lime-200: hsl(81 88% 80%);
+    --lime-300: hsl(82 85% 67%);
+    --lime-400: hsl(83 78% 55%);
+    --lime-500: hsl(84 81% 44%);
+    --lime-600: hsl(85 85% 35%);
+    --lime-700: hsl(86 78% 27%);
+    --lime-800: hsl(86 69% 23%);
+    --lime-900: hsl(88 61% 20%);
+    --green-50: hsl(138 76% 97%);
+    --green-100: hsl(141 84% 93%);
+    --green-200: hsl(141 79% 85%);
+    --green-300: hsl(142 77% 73%);
+    --green-400: hsl(142 69% 58%);
+    --green-500: hsl(142 71% 45%);
+    --green-600: hsl(142 76% 36%);
+    --green-700: hsl(142 72% 29%);
+    --green-800: hsl(143 64% 24%);
+    --green-900: hsl(144 61% 20%);
+    --emrald-50: hsl(152 81% 96%);
+    --emrald-100: hsl(149 80% 90%);
+    --emrald-200: hsl(152 76% 80%);
+    --emrald-300: hsl(156 72% 67%);
+    --emrald-400: hsl(158 64% 52%);
+    --emrald-500: hsl(160 84% 39%);
+    --emrald-600: hsl(161 94% 30%);
+    --emrald-700: hsl(163 94% 24%);
+    --emrald-800: hsl(163 88% 20%);
+    --emrald-900: hsl(164 86% 16%);
+    --teal-50: hsl(166 76% 97%);
+    --teal-100: hsl(167 85% 89%);
+    --teal-200: hsl(168 84% 78%);
+    --teal-300: hsl(171 77% 64%);
+    --teal-400: hsl(172 66% 50%);
+    --teal-500: hsl(173 80% 40%);
+    --teal-600: hsl(175 84% 32%);
+    --teal-700: hsl(175 77% 26%);
+    --teal-800: hsl(176 69% 22%);
+    --teal-900: hsl(176 61% 19%);
+    --cyan-50: hsl(183 100% 96%);
+    --cyan-100: hsl(185 96% 90%);
+    --cyan-200: hsl(186 94% 82%);
+    --cyan-300: hsl(187 92% 69%);
+    --cyan-400: hsl(188 86% 53%);
+    --cyan-500: hsl(189 94% 43%);
+    --cyan-600: hsl(192 91% 36%);
+    --cyan-700: hsl(193 82% 31%);
+    --cyan-800: hsl(194 70% 27%);
+    --cyan-900: hsl(196 64% 24%);
+    --sky-50: hsl(204 100% 97%);
+    --sky-100: hsl(204 94% 94%);
+    --sky-200: hsl(201 94% 86%);
+    --sky-300: hsl(199 95% 74%);
+    --sky-400: hsl(198 93% 60%);
+    --sky-500: hsl(199 89% 48%);
+    --sky-600: hsl(200 98% 39%);
+    --sky-700: hsl(201 96% 32%);
+    --sky-800: hsl(201 90% 27%);
+    --sky-900: hsl(202 80% 24%);
+    --sky-950: hsl(202 75% 20%);
+    --sky-980: hsl(202 70% 15%);
+    --sky-990: hsl(202 65% 10%);
+    --sky-1000: hsl(202 60% 8%);
+    --blue-50: hsl(214 100% 97%);
+    --blue-100: hsl(214 95% 93%);
+    --blue-200: hsl(213 97% 87%);
+    --blue-300: hsl(212 96% 78%);
+    --blue-400: hsl(213 94% 68%);
+    --blue-500: hsl(217 91% 60%);
+    --blue-600: hsl(221 83% 53%);
+    --blue-700: hsl(224 76% 48%);
+    --blue-800: hsl(226 71% 40%);
+    --blue-900: hsl(224 64% 33%);
+    --blue-950: hsl(224 75% 25%);
+    --blue-980: hsl(224 80% 20%);
+    --blue-990: hsl(224 85% 15%);
+    --blue-1000: hsl(224 90% 10%);
+    --indigo-50: hsl(226 100% 97%);
+    --indigo-100: hsl(226 100% 94%);
+    --indigo-200: hsl(228 96% 89%);
+    --indigo-300: hsl(230 94% 82%);
+    --indigo-400: hsl(234 89% 74%);
+    --indigo-500: hsl(239 84% 67%);
+    --indigo-600: hsl(243 75% 59%);
+    --indigo-700: hsl(245 58% 51%);
+    --indigo-800: hsl(244 55% 41%);
+    --indigo-900: hsl(242 47% 34%);
+    --violet-50: hsl(250 100% 98%);
+    --violet-100: hsl(251 91% 95%);
+    --violet-200: hsl(251 95% 92%);
+    --violet-300: hsl(252 95% 85%);
+    --violet-400: hsl(255 92% 76%);
+    --violet-500: hsl(258 90% 66%);
+    --violet-600: hsl(262 83% 58%);
+    --violet-700: hsl(263 70% 50%);
+    --violet-800: hsl(263 69% 42%);
+    --violet-900: hsl(264 67% 35%);
+    --purple-50: hsl(270 100% 98%);
+    --purple-100: hsl(269 100% 95%);
+    --purple-200: hsl(269 100% 92%);
+    --purple-300: hsl(269 97% 85%);
+    --purple-400: hsl(270 95% 75%);
+    --purple-500: hsl(271 91% 65%);
+    --purple-600: hsl(271 81% 56%);
+    --purple-700: hsl(272 72% 47%);
+    --purple-800: hsl(273 67% 39%);
+    --purple-900: hsl(274 66% 32%);
+    --fuchsia-50: hsl(289 100% 98%);
+    --fuchsia-100: hsl(287 100% 95%);
+    --fuchsia-200: hsl(288 96% 91%);
+    --fuchsia-300: hsl(291 93% 83%);
+    --fuchsia-400: hsl(292 91% 73%);
+    --fuchsia-500: hsl(292 84% 61%);
+    --fuchsia-600: hsl(293 69% 49%);
+    --fuchsia-700: hsl(295 72% 40%);
+    --fuchsia-800: hsl(295 70% 33%);
+    --fuchsia-900: hsl(297 64% 28%);
+    --pink-50: hsl(327 73% 97%);
+    --pink-100: hsl(326 78% 95%);
+    --pink-200: hsl(326 85% 90%);
+    --pink-300: hsl(327 87% 82%);
+    --pink-400: hsl(329 86% 70%);
+    --pink-500: hsl(330 81% 60%);
+    --pink-600: hsl(333 71% 51%);
+    --pink-700: hsl(335 78% 42%);
+    --pink-800: hsl(336 74% 35%);
+    --pink-900: hsl(336 69% 30%);
+    --rose-50: hsl(356 100% 97%);
+    --rose-100: hsl(356 100% 95%);
+    --rose-200: hsl(353 96% 90%);
+    --rose-300: hsl(353 96% 82%);
+    --rose-400: hsl(351 95% 71%);
+    --rose-500: hsl(350 89% 60%);
+    --rose-600: hsl(347 77% 50%);
+    --rose-700: hsl(345 83% 41%);
+    --rose-800: hsl(343 80% 35%);
+    --rose-900: hsl(342 75% 30%);
+}
+/* TYPOGRAPHY */
+:where(html) {
+    /* TYPOGRAPHY */
+    --font-sans: "FF Mark Pro", ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: "Joanna Nova", ui-serif, Georgia, Cambria, "Times New Roman",
+        Times, serif;
+    --font-mono: "Dank Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+    --font-lineheight-00: 0.95;
+    --font-lineheight-0: 1.1;
+    --font-lineheight-1: 1.25;
+    --font-lineheight-2: 1.375;
+    --font-lineheight-3: 1.5;
+    --font-lineheight-4: 1.75;
+    --font-lineheight-5: 2;
+    --font-letterspacing-0: -0.05em;
+    --font-letterspacing-1: 0.025em;
+    --font-letterspacing-2: 0.05em;
+    --font-letterspacing-3: 0.075em;
+    --font-letterspacing-4: 0.15em;
+    --font-letterspacing-5: 0.5em;
+    --font-letterspacing-6: 0.75em;
+    --font-letterspacing-7: 1em;
+    --content-width-1: 20ch;
+    --content-width-2: 45ch;
+    --content-width-3: 60ch;
+    --header-width-1: 20ch;
+    --header-width-2: 25ch;
+    --header-width-3: 35ch;
+}
+
+/* SHADOWS */
+:where(html) {
+    --shadow-color: 220 3% 15%;
+    --shadow-strength: 1%;
+    --shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
+                calc(var(--shadow-strength) + 9%));
+    --shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 7px 14px -5px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 5%));
+    --shadow-3: 0 -1px 3px 0 hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 2%)),
+        0 1px 2px -5px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 2%)),
+        0 2px 5px -5px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 4%)),
+        0 4px 12px -5px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 5%)),
+        0 12px 15px -5px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 7%));
+    --shadow-4: 0 -2px 5px 0 hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 2%)),
+        0 1px 1px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 2px 2px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 5px 5px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 4%)),
+        0 9px 9px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 5%)),
+        0 16px 16px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 6%));
+    --shadow-5: 0 -1px 2px 0 hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 2%)),
+        0 2px 1px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 5px 5px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 10px 10px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 4%)),
+        0 20px 20px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 5%)),
+        0 40px 40px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 7%));
+    --shadow-6: 0 -1px 2px 0 hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 2%)),
+        0 3px 2px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 7px 5px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 3%)),
+        0 12px 10px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 4%)),
+        0 22px 18px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 5%)),
+        0 41px 33px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 6%)),
+        0 100px 80px -2px hsl(var(--shadow-color) /
+                    calc(var(--shadow-strength) + 7%));
+    --inner-shadow-0: inset 0 0 0 1px
+        hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-1: inset 0 1px 2px 0
+        hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-2: inset 0 1px 4px 0
+        hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-3: inset 0 2px 8px 0
+        hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-4: inset 0 2px 14px 0
+        hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+}
+
+/* UTILITY */
+:where(html) {
+    /* Z INDEX */
+    --layer-1: 1;
+    --layer-2: 2;
+    --layer-3: 3;
+    --layer-4: 4;
+    --layer-5: 5;
+    --layer-important: 2147483647;
+
+    /* ASPECT RATIO */
+    --ratio-square: 1;
+    --ratio-landscape: 1.33;
+    --ratio-portrait: 0.75;
+    --ratio-widescreen: 1.78;
+    --ratio-ultrawide: 2.55;
+    --ratio-golden: 1.618;
+
+    /* BORDERS AND RADIUS */
+    --border-size-1: 1px;
+    --border-size-2: 2px;
+    --border-size-3: 5px;
+    --border-size-4: 10px;
+    --border-size-5: 25px;
+    --radius-1: 2px;
+    --radius-2: 5px;
+    --radius-3: 1rem;
+    --radius-4: 2rem;
+    --radius-5: 4rem;
+    --radius-6: 8rem;
+    --radius-round: 1e5px;
+    --radius-blob-1: 30% 70% 70% 30%/53% 30% 70% 47%;
+    --radius-blob-2: 53% 47% 34% 66%/63% 46% 54% 37%;
+    --radius-blob-3: 37% 63% 56% 44%/49% 56% 44% 51%;
+    --radius-blob-4: 63% 37% 37% 63%/43% 37% 63% 57%;
+    --radius-blob-5: 49% 51% 48% 52%/57% 44% 56% 43%;
+    --radius-conditional-1: clamp(
+        0px,
+        calc(100vw - 100%) * 1e5,
+        var(--radius-1)
+    );
+    --radius-conditional-2: clamp(
+        0px,
+        calc(100vw - 100%) * 1e5,
+        var(--radius-2)
+    );
+    --radius-conditional-3: clamp(
+        0px,
+        calc(100vw - 100%) * 1e5,
+        var(--radius-3)
+    );
+    --radius-conditional-4: clamp(
+        0px,
+        calc(100vw - 100%) * 1e5,
+        var(--radius-4)
+    );
+    --radius-conditional-5: clamp(
+        0px,
+        calc(100vw - 100%) * 1e5,
+        var(--radius-5)
+    );
+    --radius-conditional-6: clamp(
+        0px,
+        calc(100vw - 100%) * 1e5,
+        var(--radius-6)
+    );
+}
+
+/* GRADIENTS */
+:where(html) {
+    /* GRADIENTS */
+    --gradient-1: linear-gradient(
+        to bottom right,
+        #1f005c,
+        #5b0060,
+        #870160,
+        #ac255e,
+        #ca485c,
+        #e16b5c,
+        #f39060,
+        #ffb56b
+    );
+    --gradient-2: linear-gradient(to bottom right, #48005c, #8300e2, #a269ff);
+    --gradient-3: radial-gradient(
+            circle at top right,
+            #0ff,
+            rgba(0, 255, 255, 0)
+        ),
+        radial-gradient(circle at bottom left, #ff1492, rgba(255, 20, 146, 0));
+    --gradient-4: linear-gradient(to bottom right, #00f5a0, #00d9f5);
+    --gradient-5: conic-gradient(from -270deg at 75%, at 110%, #f0f, #fffaf0);
+    --gradient-5: conic-gradient(from -270deg at 75% 110%, #f0f, #fffaf0);
+    --gradient-6: conic-gradient(from -90deg at top left, #000, #fff);
+    --gradient-7: linear-gradient(to bottom right, #72c6ef, #004e8f);
+    --gradient-8: conic-gradient(
+        from 90deg at 50%,
+        at 0%,
+        #111,
+        50%,
+        #222,
+        #111
+    );
+    --gradient-8: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+    --gradient-9: conic-gradient(from 0.5turn at bottom center, #add8e6, #fff);
+    --gradient-10: conic-gradient(
+        from 90deg at 40%,
+        at -25%,
+        gold,
+        #f79d03,
+        #ee6907,
+        #e6390a,
+        #de0d0d,
+        #d61039,
+        #cf1261,
+        #c71585,
+        #cf1261,
+        #d61039,
+        #de0d0d,
+        #ee6907,
+        #f79d03,
+        gold,
+        gold,
+        gold
+    );
+    --gradient-10: conic-gradient(
+        from 90deg at 40% -25%,
+        gold,
+        #f79d03,
+        #ee6907,
+        #e6390a,
+        #de0d0d,
+        #d61039,
+        #cf1261,
+        #c71585,
+        #cf1261,
+        #d61039,
+        #de0d0d,
+        #ee6907,
+        #f79d03,
+        gold,
+        gold,
+        gold
+    );
+    --gradient-11: conic-gradient(at bottom left, #ff1493, cyan);
+    --gradient-12: conic-gradient(
+        from 90deg at 25%,
+        at -10%,
+        #ff4500,
+        #d3f340,
+        #7bee85,
+        #afeeee,
+        #7bee85
+    );
+    --gradient-12: conic-gradient(
+        from 90deg at 25% -10%,
+        #ff4500,
+        #d3f340,
+        #7bee85,
+        #afeeee,
+        #7bee85
+    );
+    --gradient-13: radial-gradient(
+        circle at 50%,
+        at 200%,
+        #000142,
+        #3b0083,
+        #b300c3,
+        #ff059f,
+        #ff4661,
+        #ffad86,
+        #fff3c7
+    );
+    --gradient-13: radial-gradient(
+        circle at 50% 200%,
+        #000142,
+        #3b0083,
+        #b300c3,
+        #ff059f,
+        #ff4661,
+        #ffad86,
+        #fff3c7
+    );
+    --gradient-14: conic-gradient(at top right, lime, cyan);
+    --gradient-15: linear-gradient(to bottom right, #c7d2fe, #fecaca, #fef3c7);
+    --gradient-16: radial-gradient(
+        circle at 50%,
+        at -250%,
+        #374151,
+        #111827,
+        #000
+    );
+    --gradient-16: radial-gradient(circle at 50% -250%, #374151, #111827, #000);
+    --gradient-17: conic-gradient(from -90deg at 50%, at -25%, blue, #8a2be2);
+    --gradient-17: conic-gradient(from -90deg at 50% -25%, blue, #8a2be2);
+    --gradient-18: linear-gradient(
+            0deg,
+            rgba(255, 0, 0, 0.8),
+            rgba(255, 0, 0, 0) 75%
+        ),
+        linear-gradient(60deg, rgba(255, 255, 0, 0.8), rgba(255, 255, 0, 0) 75%),
+        linear-gradient(120deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 75%),
+        linear-gradient(
+            180deg,
+            rgba(0, 255, 255, 0.8),
+            rgba(0, 255, 255, 0) 75%
+        ),
+        linear-gradient(240deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 75%),
+        linear-gradient(
+            300deg,
+            rgba(255, 0, 255, 0.8),
+            rgba(255, 0, 255, 0) 75%
+        );
+    --gradient-19: linear-gradient(to bottom right, #ffe259, #ffa751);
+    --gradient-20: conic-gradient(
+        from -135deg at -10% center,
+        orange,
+        #ff7715,
+        #ff522a,
+        #ff3f47,
+        #ff5482,
+        #ff69b4
+    );
+    --gradient-21: conic-gradient(
+        from -90deg at 25%,
+        at 115%,
+        red,
+        #f06,
+        #f0c,
+        #c0f,
+        #60f,
+        #00f,
+        #00f,
+        #00f,
+        #00f
+    );
+    --gradient-21: conic-gradient(
+        from -90deg at 25% 115%,
+        red,
+        #f06,
+        #f0c,
+        #c0f,
+        #60f,
+        #00f,
+        #00f,
+        #00f,
+        #00f
+    );
+    --gradient-22: linear-gradient(to bottom right, #acb6e5, #86fde8);
+    --gradient-23: linear-gradient(to bottom right, #536976, #292e49);
+    --gradient-24: conic-gradient(
+        from 0.5turn at 0%,
+        at 0%,
+        #00c476,
+        10%,
+        #82b0ff,
+        90%,
+        #00c476
+    );
+    --gradient-24: conic-gradient(
+        from 0.5turn at 0% 0%,
+        #00c476,
+        10%,
+        #82b0ff,
+        90%,
+        #00c476
+    );
+    --gradient-25: conic-gradient(
+        at 125%,
+        at 50%,
+        #b78cf7,
+        #ff7c94,
+        #ffcf0d,
+        #ff7c94,
+        #b78cf7
+    );
+    --gradient-25: conic-gradient(
+        at 125% 50%,
+        #b78cf7,
+        #ff7c94,
+        #ffcf0d,
+        #ff7c94,
+        #b78cf7
+    );
+    --gradient-26: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+    --gradient-27: conic-gradient(from 0.5turn at bottom left, #ff1493, #639);
+    --gradient-28: conic-gradient(from -90deg at 50%, at 105%, #fff, orchid);
+    --gradient-28: conic-gradient(from -90deg at 50% 105%, #fff, orchid);
+    --gradient-29: radial-gradient(
+            circle at top right,
+            #bfb3ff,
+            hsl(250 100% 85%/0%)
+        ),
+        radial-gradient(circle at bottom left, #86acf9, hsl(220 90% 75%/0%));
+    --gradient-30: radial-gradient(
+            circle at top right,
+            #00ff80,
+            rgba(0, 255, 128, 0)
+        ),
+        radial-gradient(circle at bottom left, #adffd6, hsl(150 100% 84%/0%));
+}
+
+/* ANIMATION */
+:where(html) {
+    --ease-1: cubic-bezier(0.25, 0, 0.5, 1);
+    --ease-2: cubic-bezier(0.25, 0, 0.4, 1);
+    --ease-3: cubic-bezier(0.25, 0, 0.3, 1);
+    --ease-4: cubic-bezier(0.25, 0, 0.2, 1);
+    --ease-5: cubic-bezier(0.25, 0, 0.1, 1);
+    --ease-in-1: cubic-bezier(0.25, 0, 1, 1);
+    --ease-in-2: cubic-bezier(0.5, 0, 1, 1);
+    --ease-in-3: cubic-bezier(0.7, 0, 1, 1);
+    --ease-in-4: cubic-bezier(0.9, 0, 1, 1);
+    --ease-in-5: cubic-bezier(1, 0, 1, 1);
+    --ease-out-1: cubic-bezier(0, 0, 0.75, 1);
+    --ease-out-2: cubic-bezier(0, 0, 0.5, 1);
+    --ease-out-3: cubic-bezier(0, 0, 0.3, 1);
+    --ease-out-4: cubic-bezier(0, 0, 0.1, 1);
+    --ease-out-5: cubic-bezier(0, 0, 0, 1);
+    --ease-in-out-1: cubic-bezier(0.1, 0, 0.9, 1);
+    --ease-in-out-2: cubic-bezier(0.3, 0, 0.7, 1);
+    --ease-in-out-3: cubic-bezier(0.5, 0, 0.5, 1);
+    --ease-in-out-4: cubic-bezier(0.7, 0, 0.3, 1);
+    --ease-in-out-5: cubic-bezier(0.9, 0, 0.1, 1);
+    --ease-elastic-1: cubic-bezier(0.5, 0.75, 0.75, 1.25);
+    --ease-elastic-2: cubic-bezier(0.5, 1, 0.75, 1.25);
+    --ease-elastic-3: cubic-bezier(0.5, 1.25, 0.75, 1.25);
+    --ease-elastic-4: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+    --ease-elastic-5: cubic-bezier(0.5, 1.75, 0.75, 1.25);
+    --ease-squish-1: cubic-bezier(0.5, -0.1, 0.1, 1.5);
+    --ease-squish-2: cubic-bezier(0.5, -0.3, 0.1, 1.5);
+    --ease-squish-3: cubic-bezier(0.5, -0.5, 0.1, 1.5);
+    --ease-squish-4: cubic-bezier(0.5, -0.7, 0.1, 1.5);
+    --ease-squish-5: cubic-bezier(0.5, -0.9, 0.1, 1.5);
+    --ease-step-1: steps(2);
+    --ease-step-2: steps(3);
+    --ease-step-3: steps(4);
+    --ease-step-4: steps(7);
+    --ease-step-5: steps(10);
+}
