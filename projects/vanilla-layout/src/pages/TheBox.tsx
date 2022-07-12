@@ -4,7 +4,7 @@ export function TheBox() {
     return (
         <div className="center">
             <div className="stack">
-                <h1>The Box</h1>
+                <h2>The Box</h2>
                 <div className="stack">
                     <p>
                         This is the basic box primitive. You may see it around
@@ -82,7 +82,7 @@ export function TheBox() {
                         <Link to="/home/the-sidebar">Sidebar</Link> layout
                         component!
                     </p>
-                    <div className="sidebar gap-[0] box box-outlined p-0">
+                    <div className="sidebar box box-outlined p-0">
                         <div className="box box-outlined">Head</div>
                         <div className="box box-outlined">
                             Body content. Lorem ipsum dolor sit amet consectetur

@@ -2,7 +2,7 @@ export function TheCluster() {
     return (
         <div className="center">
             <div className="stack stack-gap:mbs-lg">
-                <h1>The Cluster</h1>
+                <h2>The Cluster</h2>
                 <p>
                     Override default gap with the &nbsp;
                     <code>{`gap`}</code> property E.g. ({" "}

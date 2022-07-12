@@ -73,3 +73,20 @@
     align-items: center;
 }
 
+/* ### THE CENTER ### */
+.center {
+    box-sizing: content-box;
+    margin-inline: auto;
+    position: relative;
+    padding-inline: var(--space-xl)
+}
+
+/* ### THE GRID ### */
+.auto-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(
+        var(--grid-placement, auto-fill),
+        minmax(var(--grid-item-min-widh, 16rem), 1fr)
+    )
+}

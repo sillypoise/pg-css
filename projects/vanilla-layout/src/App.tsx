@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { TheBox } from "./pages/TheBox";
+import { TheCenter } from "./pages/TheCenter";
 import { TheCluster } from "./pages/TheCluster";
+import { TheGrid } from "./pages/TheGrid";
 import { TheSidebar } from "./pages/TheSidebar";
 import TheStack from "./pages/TheStack";
 
@@ -18,7 +20,7 @@ function App() {
                 <h4>Every Layout Primitive in Vanilla CSS</h4>
             </header>
             <nav>
-                <ul>
+                <ul className="cluster" role="list">
                     <li>
                         <Link to="/the-stack">The Stack</Link>
                     </li>
@@ -31,6 +33,12 @@ function App() {
                     <li>
                         <Link to="/the-cluster">The Cluster</Link>
                     </li>
+                    <li>
+                        <Link to="/the-center">The Center</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-grid">The Grid</Link>
+                    </li>
                 </ul>
             </nav>
             <main>
@@ -39,6 +47,8 @@ function App() {
                     <Route path="/the-box" element={<TheBox />} />
                     <Route path="/the-sidebar" element={<TheSidebar />} />
                     <Route path="/the-cluster" element={<TheCluster />} />
+                    <Route path="/the-center" element={<TheCenter />} />
+                    <Route path="/the-grid" element={<TheGrid />} />
                 </Routes>
             </main>
         </div>

@@ -2,7 +2,7 @@ export default function TheStack() {
     return (
         <div className="center">
             <div className="stack">
-                <h4>The Stack</h4>
+                <h2>The Stack</h2>
                 <div className="stack bs-80 box bg-teal | debug">
                     <div className="box">We stack!</div>
                     <div className="box">

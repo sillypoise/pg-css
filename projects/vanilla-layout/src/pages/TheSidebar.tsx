@@ -2,7 +2,7 @@ export function TheSidebar() {
     return (
         <div className="center">
             <div className="stack">
-                <h1>The Sidebar</h1>
+                <h2>The Sidebar</h2>
                 <p>
                     Justs add the custom <code>sidebar</code> utility class.
                     Then proceed to customize the sidebar's children with the
