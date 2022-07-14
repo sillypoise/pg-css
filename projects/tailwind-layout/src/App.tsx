@@ -1,17 +1,22 @@
-import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+
 import { TheBox } from "./pages/TheBox";
 import { TheCenter } from "./pages/TheCenter";
 import { TheCluster } from "./pages/TheCluster";
 import { TheGrid } from "./pages/TheGrid";
 import { TheSidebar } from "./pages/TheSidebar";
 import { TheStack } from "./pages/TheStack";
+import { TheSwitcher } from "./pages/TheSwitcher";
+import { TheCover } from "./pages/TheCover";
+import { TheFrame } from "./pages/TheFrame";
 
-import "./props.css";
-import "./reset.css";
-import "./styles/App.css";
-import "./styles/layout.css";
-import "./styles/utils.css";
+import { useState } from "react";
+import "./styles/sp-tw-props.css";
+import "./styles/reset.css";
+import "./styles/tailwind.css";
+import { TheReel } from "./pages/TheReel";
+import { TheImposter } from "./pages/TheImposter";
+import { TheIcon } from "./pages/TheIcon";
 
 function App() {
     return (
@@ -39,6 +44,24 @@ function App() {
                     <li>
                         <Link to="/the-grid">The Grid</Link>
                     </li>
+                    <li>
+                        <Link to="/the-switcher">The Switcher</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-cover">The Cover</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-frame">The Frame</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-reel">The Reel</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-imposter">The Imposter</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-icon">The Icon</Link>
+                    </li>
                 </ul>
             </nav>
             <main>
@@ -49,6 +72,12 @@ function App() {
                     <Route path="/the-cluster" element={<TheCluster />} />
                     <Route path="/the-center" element={<TheCenter />} />
                     <Route path="/the-grid" element={<TheGrid />} />
+                    <Route path="/the-switcher" element={<TheSwitcher />} />
+                    <Route path="/the-cover" element={<TheCover />} />
+                    <Route path="/the-frame" element={<TheFrame />} />
+                    <Route path="/the-reel" element={<TheReel />} />
+                    <Route path="/the-imposter" element={<TheImposter />} />
+                    <Route path="/the-icon" element={<TheIcon />} />
                 </Routes>
             </main>
         </div>

@@ -1,4 +1,4 @@
-export default function TheStack() {
+export function TheStack() {
     return (
         <div className="center">
             <div className="stack">

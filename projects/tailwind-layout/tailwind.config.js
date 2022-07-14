@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
     content: ["./src/**/*.{ts,tsx,jsx,js}"],
+    experimental: { matchVariant: true },
     theme: {
         spacing: {
             "3xs": "var(--space-3xs)",
@@ -81,14 +84,47 @@ module.exports = {
         },
         borderWidth: {
             DEFAULT: "var(--border-size-1)",
+            1: "var(--border-size-1)",
             2: "var(--border-size-2)",
             3: "var(--border-size-3)",
             4: "var(--border-size-4)",
             5: "var(--border-size-5)",
         },
+        contentWidth: {
+            1: "var(--content-width-1)",
+            2: "var(--content-width-2)",
+            3: "var(--content-width-3)",
+            4: "var(--content-width-4)",
+            5: "var(--content-width-5)",
+        },
     },
     corePlugins: {
         preflight: false,
     },
-    plugins: [require("tailwindcss-logical")],
+    plugins: [
+        ({ matchVariant }) => {
+            matchVariant(
+                {
+                    "switcher-max-child": (val) => [
+                        `& > :nth-child(n+${val})`,
+                        `& > :nth-child(n+${val})~*`,
+                    ],
+                },
+                {
+                    values: {
+                        2: 3,
+                        3: 4,
+                        4: 5,
+                        5: 6,
+                        6: 7,
+                        7: 8,
+                        8: 9,
+                        9: 10,
+                        10: 11,
+                    },
+                }
+            );
+        },
+        require("tailwindcss-logical"),
+    ],
 };

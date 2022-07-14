@@ -23,6 +23,22 @@ importers:
       typescript: 4.7.2
       vite: 2.9.9
 
+  projects/tailwind-layout:
+    specifiers:
+      autoprefixer: ^10.4.7
+      postcss: ^8.4.14
+      postcss-cli: ^10.0.0
+      postcss-import: ^14.1.0
+      tailwindcss: ^3.1.6
+      tailwindcss-logical: ^3.0.0
+    devDependencies:
+      autoprefixer: 10.4.7_postcss@8.4.14
+      postcss: 8.4.14
+      postcss-cli: 10.0.0_postcss@8.4.14
+      postcss-import: 14.1.0_postcss@8.4.14
+      tailwindcss: 3.1.6
+      tailwindcss-logical: 3.0.0_ugi4xkrfysqkt4c4y6hkyfj344
+
   projects/tailwind-normalize:
     specifiers:
       '@tailwindcss/typography': ^0.5.3
@@ -1315,7 +1331,7 @@ packages:
       postcss: 8.4.14
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.0
+      resolve: 1.22.1
     dev: true
 
   /postcss-js/3.0.3:

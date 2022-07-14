@@ -2,3 +2,4 @@ pacakges:
     - "projects/vanilla-normalize/**"
     - "projects/vanilla-layout/**"
     - "projects/tailwind-normalize/**"
+    - "projects/tailwind-layout/**"
