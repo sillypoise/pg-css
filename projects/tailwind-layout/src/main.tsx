@@ -6,7 +6,7 @@ import App from "./App";
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <BrowserRouter>
-            <div style={{ maxInlineSize: "60rem", marginInline: "auto" }}>
+            <div className="center max-is-[60rem] pbs-2xl pbe-3xl">
                 <App />
             </div>
         </BrowserRouter>

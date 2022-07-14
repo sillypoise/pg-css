@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
     content: ["./src/**/*.{ts,tsx,jsx,js}"],
     experimental: { matchVariant: true },
@@ -96,6 +94,11 @@ module.exports = {
             3: "var(--content-width-3)",
             4: "var(--content-width-4)",
             5: "var(--content-width-5)",
+        },
+        headerWidth: {
+            1: "var(--header-width-1)",
+            2: "var(--header-width-2)",
+            3: "var(--header-width-3)",
         },
     },
     corePlugins: {
