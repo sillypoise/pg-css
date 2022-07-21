@@ -22,6 +22,13 @@ export function TheSidebar() {
                             <strong>default value</strong> is{" "}
                             <code>var(--space-xs)</code>
                         </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>gap: []</code> property with inline
+                                styles. E.g. <code>gap: --var(--space-m)</code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <p>
