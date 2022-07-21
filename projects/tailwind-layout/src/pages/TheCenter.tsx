@@ -18,17 +18,17 @@ export function TheCenter() {
                         property. Usually done through a value with a{" "}
                         <code>ch</code> unit. It's <strong>default</strong>{" "}
                         value is <code>theme(contentWidth.4)</code>
-                        <ul className="stack">
-                            <li>
-                                <p>
-                                    Alternatively use the <code>max-is-[]</code>{" "}
-                                    property with an arbitrary value. E.g.{" "}
-                                    <code>max-is-[65ch]</code>
-                                </p>
-                            </li>
-                        </ul>
                     </p>
                 </li>
+                <ul className="stack">
+                    <li>
+                        <p>
+                            Alternatively use the <code>max-is-[]</code>{" "}
+                            property with an arbitrary value. E.g.{" "}
+                            <code>max-is-[65ch]</code>
+                        </p>
+                    </li>
+                </ul>
                 <li>
                     <p>
                         <strong>
@@ -38,16 +38,16 @@ export function TheCenter() {
                         changing the value of the <code>padding-inline</code>{" "}
                         property. It's <strong>default</strong> value is{" "}
                         <code>theme(spacing.s)</code>
-                        <ul>
-                            <li>
-                                <p>
-                                    Alternatively use the <code>pli-[]</code>{" "}
-                                    property with an arbitrary value. E.g.{" "}
-                                    <code>pli-[3xl]</code>
-                                </p>
-                            </li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Alternatively use the <code>pli-[]</code>{" "}
+                                property with an arbitrary value. E.g.{" "}
+                                <code>pli-[3xl]</code>
+                            </p>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <p>
@@ -99,9 +99,9 @@ export function TheCenter() {
                     Override the&nbsp; <code>padding-inline</code> property!
                     E.g.&nbsp;(
                     <code>pli-xl</code>).{" "}
-                    <p>
-                        <em>View in responsive mode to see difference!</em>
-                    </p>
+                </p>
+                <p>
+                    <em>View in responsive mode to see difference!</em>
                 </p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

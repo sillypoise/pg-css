@@ -107,9 +107,9 @@ export function TheCenter() {
                     Override the&nbsp; <code>padding-inline</code> property!
                     E.g.&nbsp;(
                     <code>pli-xl</code>).{" "}
-                    <p>
-                        <em>View in responsive mode to see difference!</em>
-                    </p>
+                </p>
+                <p>
+                    <em>View in responsive mode to see difference!</em>
                 </p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

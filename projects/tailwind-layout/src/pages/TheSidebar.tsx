@@ -19,14 +19,14 @@ export function TheSidebar() {
                             the <code>{`gap: []rem;`}</code> property. Its{" "}
                             <strong>default value</strong> is{" "}
                             <code>theme(spacing.xs)</code>
-                            <ul>
-                                <li>
-                                    <strong>Note</strong> you can also just use
-                                    the <code>gap-[]</code> class utility from
-                                    tailwind as well
-                                </li>
-                            </ul>
                         </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just use the{" "}
+                                <code>gap-[]</code> class utility from tailwind
+                                as well
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <p>
