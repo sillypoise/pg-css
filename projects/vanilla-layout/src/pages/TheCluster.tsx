@@ -2,12 +2,78 @@ export function TheCluster() {
     return (
         <div className="center">
             <div className="stack stack-gap:mbs-lg">
-                <h2>The Cluster</h2>
+                <h1>The Cluster</h1>
                 <p>
-                    Override default gap with the &nbsp;
-                    <code>{`gap`}</code> property E.g. ({" "}
-                    <code>gap: var(--space-m)</code> )
+                    Justs add the custom <code>cluster</code> class. Then
+                    proceed to customize the cluster's children through
+                    properties. Specifically:
                 </p>
+                <ul className="stack">
+                    <li>
+                        <p>
+                            <strong>
+                                <code>{`--cluster-gap`}</code>
+                            </strong>{" "}
+                            → adjusts the gap of the actual{" "}
+                            <strong>sidebar</strong> by changing the value of
+                            the <code>{`gap: []rem;`}</code> property. Its{" "}
+                            <strong>default value</strong> is{" "}
+                            <code>{`var(--space-s)`}</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>{`gap: []`}</code> property with
+                                inline styles. E.g.{" "}
+                                <code>{`gap: --var(--space-m)`}</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>
+                                <code>{`--cluster-justify`}</code>
+                            </strong>{" "}
+                            → adjusts the{" "}
+                            <strong>justification of the whole content</strong>{" "}
+                            inside the cluster by changing the value of the{" "}
+                            <code>{`justify-content: <value>;`}</code> property.
+                            Its <strong>default value</strong> is{" "}
+                            <code>{`start`}</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>{`justify-content: <value>`}</code>{" "}
+                                property with inline styles. E.g.{" "}
+                                <code>{`justify-content: end`}</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>
+                                <code>{`--cluster-align`}</code>
+                            </strong>{" "}
+                            → adjusts the{" "}
+                            <strong>alignment of items, i.e. children</strong>{" "}
+                            inside the <strong>cluster</strong> by changing the{" "}
+                            <code>{`align-items: <value>`}</code> property. Its{" "}
+                            <strong>default value</strong> is{" "}
+                            <code>{`center`}</code>.
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>{`align-items: <value>`}</code>{" "}
+                                property with inline styles. E.g.{" "}
+                                <code>{`align-items: end`}</code>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>Default values</p>
                 <div className="cluster">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (

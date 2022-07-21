@@ -75,9 +75,9 @@
 .cluster {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-s);
-    justify-content: start;
-    align-items: center;
+    gap: var(--cluster-gap, var(--space-s));
+    justify-content: var(--cluster-justify, start);
+    align-items: var(--cluster-align, center);
 }
 
 /* ### THE GRID ### */

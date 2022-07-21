@@ -614,9 +614,9 @@
     .cluster {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--space-s);
-        justify-content: start;
-        align-items: center;
+        gap: var(--cluster-gap, var(--space-s));
+        justify-content: var(--cluster-justify, start);
+        align-items: var(--cluster-align, center);
     }
 
     /* ### THE GRID ### */
@@ -759,6 +759,10 @@
         display: block;
 }
 
+    .inline {
+        display: inline;
+}
+
     .flex {
         display: flex;
 }
@@ -883,6 +887,10 @@
         gap: var(--space-xs);
 }
 
+    .gap-m {
+        gap: var(--space-m);
+}
+
     .self-center {
         align-self: center;
 }
@@ -933,6 +941,10 @@
     .bg-gray-300 {
         --tw-bg-opacity: 1;
         background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+    .bg-teal-500\/60 {
+        background-color: rgb(20 184 166 / 0.6);
 }
 
     .p-\[0\] {
