@@ -62,7 +62,7 @@
 }
 :where(p) {
     max-inline-size: var(--content-width-3);
-    line-height: var(--font-lineheight-4);
+    line-height: var(--font-lineheight-3);
 }
 :where(h3, h4, h5, h6, dt) {
     max-inline-size: var(--header-width-3);
@@ -164,7 +164,7 @@
 :where(:not(pre) > code) {
     background-color: var(--surface-5);
     border-radius: var(--radius-2);
-    padding: var(--space-3xs) var(--space-2xs);
+    padding: 0.05rem var(--space-3xs);
 }
 :where(kbd, var) {
     border-color: var(--on-surface);

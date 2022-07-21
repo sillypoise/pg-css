@@ -9,11 +9,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <BrowserRouter>
             <div
                 className="center"
-                style={{
-                    maxInlineSize: "60rem",
-                    paddingBlockStart: "var(--space-2xl)",
-                    paddingBlockEnd: "var(--space-3xl)",
-                }}
+                style={
+                    {
+                        "--center-width": "60rem",
+                        paddingBlockStart: "var(--space-2xl)",
+                        paddingBlockEnd: "var(--space-3xl)",
+                    } as React.CSSProperties
+                }
             >
                 <App />
             </div>
