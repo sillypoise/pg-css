@@ -5,21 +5,21 @@
     justify-content: center;
 }
 .stack > * + * {
-    margin-block-start: var(--space-m);
+    margin-block-start: var(--stack-gap, var(--space-m))
 }
 .stack:only-child {
     block-size: 100%;
 }
 /* OPTIONAL SPLIT TARGET */
-.stack > :nth-child(4) {
+/* .stack > :nth-child(4) {
     margin-block-end: auto;
-}
+} */
 
 /* ### THE BOX ### */
 .box {
     padding: var(--space-m);
-    /* border: var(--border-size-2) solid; */
-    outline: var(--border-size-2) transparent;
+    border: var(--border-size-2) solid;
+    outline: var(--border-size-3) transparent;
     outline-offset: calc(var(--border-size-2) * -1);
     --color-light: var(--gray-100)
     --color-dark: var(--gray-900)
@@ -89,4 +89,15 @@
         var(--grid-placement, auto-fill),
         minmax(var(--grid-item-min-widh, 16rem), 1fr)
     )
+}
+
+/* ### THE SWITCHER ### */
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s)
+}
+.switcher > * {
+    flex-grow: 1;
+    flex-basis: calc((var(--switcher-threshold, 30rem) - 100%) * 999);
 }

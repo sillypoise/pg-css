@@ -5,8 +5,9 @@ export function TheStack() {
                 <h1>The Stack</h1>
                 <p>
                     We overwrite our stack top margin by defining the &nbsp;
-                    <code>{`stack-gap:mbs-{space scale value}`}</code>&nbsp;
-                    custom property! E.g.{" "}
+                    <code>{`--stack-gap`}</code>&nbsp; custom property! In
+                    <strong>Tailwind</strong> we can do this with a simple
+                    arbitrary property. E.g.
                     <code>[--stack-gap:theme(spacing.xs)]</code>
                 </p>
                 <div className="stack [--stack-gap:theme(spacing.xs)] bs-[80rem] box bg-teal-600/50 | debug">
@@ -18,11 +19,15 @@ export function TheStack() {
                         <p>Except the first child</p>
                     </div>
                     <div className="box stack bg-red-500/60 mbe-auto">
-                        <p>You can split me anywhere you like by adding the </p>
+                        <p>I'm the fourth child!</p>
+                        <p>
+                            You can split the stack anywhere you like by adding
+                            the{" "}
+                        </p>
                         <div className="box bg-gray-300 rounded-md">
                             <code>mbe-auto</code>
                         </div>
-                        <p>&nbsp;class to a specific target child!</p>
+                        <p>&nbsp;utility class to a specific target child!</p>
                         <p>
                             <em>As long as</em> the stack element is the only
                             child of the parent element. Else you have to{" "}
