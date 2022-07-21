@@ -88,6 +88,15 @@ module.exports = {
             4: "var(--border-size-4)",
             5: "var(--border-size-5)",
         },
+        lineHeight: {
+            negative: "var(--font-lineheight-00)",
+            none: "var(--font-lineheight-0)",
+            tight: "var(--font-lineheight-1)",
+            snug: "var(--font-lineheight-2)",
+            normal: "var(--font-lineheight-3)",
+            relaxed: "var(--font-lineheight-4)",
+            loose: "var(--font-lineheight-5)",
+        },
         contentWidth: {
             1: "var(--content-width-1)",
             2: "var(--content-width-2)",

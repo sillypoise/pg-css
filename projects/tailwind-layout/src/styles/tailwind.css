@@ -31,7 +31,7 @@
 
     :where(h1, h2, h3, h4, h5, h6) {
         font-weight: 900;
-        line-height: 1.25;
+        line-height: var(--font-lineheight-1);
     }
 
     :where(h1) {
@@ -58,6 +58,7 @@
 
     :where(p) {
         max-inline-size: var(--content-width-3);
+        line-height: var(--font-lineheight-3)
     }
 
     :where(h3, h4, h5, h6, dt) {
@@ -186,7 +187,7 @@
     :where(:not(pre) > code) {
         background-color: var(--surface-5);
         border-radius: 0.375rem;
-        padding: var(--space-3xs) var(--space-2xs);
+        padding: var(--space-3xs) var(--space-3xs);
     }
 
     :where(kbd, var) {
@@ -536,7 +537,7 @@
     }
 
     .stack > * + * {
-        margin-block-start: var(--stack-gap, var(--space-m));
+        margin-block-start: var(--stack-gap, var(--space-l));
     }
 
     .stack:only-child {
@@ -585,7 +586,7 @@
     .sidebar {
         display: flex;
         flex-wrap: wrap;
-        gap: 0;
+        gap: var(--sidebar-gap, var(--space-xs));
     }
 
     .sidebar:not([data-direction]) > :first-child {
@@ -872,6 +873,18 @@
         gap: var(--space-s);
 }
 
+    .gap-\[\] {
+        gap: ;
+}
+
+    .gap-3xs {
+        gap: var(--space-3xs);
+}
+
+    .gap-xs {
+        gap: var(--space-xs);
+}
+
     .self-center {
         align-self: center;
 }
@@ -904,6 +917,11 @@
 
     .bg-red-400\/80 {
         background-color: rgb(248 113 113 / 0.8);
+}
+
+    .bg-teal-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(20 184 166 / var(--tw-bg-opacity));
 }
 
     .bg-teal-600\/50 {

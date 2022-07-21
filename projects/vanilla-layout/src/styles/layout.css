@@ -5,7 +5,7 @@
     justify-content: center;
 }
 .stack > * + * {
-    margin-block-start: var(--stack-gap, var(--space-m))
+    margin-block-start: var(--stack-gap, var(--space-l))
 }
 .stack:only-child {
     block-size: 100%;
@@ -14,7 +14,13 @@
 /* .stack > :nth-child(4) {
     margin-block-end: auto;
 } */
-
+/* ### THE CENTER ### */
+.center {
+    box-sizing: content-box;
+    margin-inline: auto;
+    position: relative;
+    padding-inline: var(--space-xl)
+}
 /* ### THE BOX ### */
 .box {
     padding: var(--space-m);
@@ -40,27 +46,27 @@
 .sidebar {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-xs)
+    gap: var(--sidebar-gap, var(--space-xs));
 }
 .sidebar:not([data-direction]) > :first-child {
-    flex-basis: 20rem;
+    flex-basis: var(--sidebar-width, var(--space-5xl));
     flex-grow: 1;
 }
 
 .sidebar:not([data-direction]) > :last-child {
     flex-basis: 0;
     flex-grow: 999;
-    min-inline-size: 50%;
+    min-inline-size: var(--sidebar-threshold, 50%);
 }
 
 .sidebar[data-direction="rtl"] > :first-child {
     flex-basis: 0;
     flex-grow: 999;
-    min-inline-size: 50%;
+    min-inline-size: var(--sidebar-threshold, 50%);
 }
 
 .sidebar[data-direction="rtl"] > :last-child {
-    flex-basis: 20rem;
+    flex-basis: var(--sidebar-width, var(--space-5xl));
     flex-grow: 1;
 }
 
@@ -71,14 +77,6 @@
     gap: var(--space-s);
     justify-content: start;
     align-items: center;
-}
-
-/* ### THE CENTER ### */
-.center {
-    box-sizing: content-box;
-    margin-inline: auto;
-    position: relative;
-    padding-inline: var(--space-xl)
 }
 
 /* ### THE GRID ### */
