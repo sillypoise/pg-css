@@ -3,19 +3,75 @@ export function TheCluster() {
         <div className="center">
             <div className="stack [--stack-gap:theme(spacing.l)]">
                 <h1>The Cluster</h1>
-                <p>
-                    Override default gap with &nbsp;{" "}
-                    <code>{`gap-[space scale value]`}</code> E.g. ({" "}
-                    <code>gap-md</code> )
-                </p>
-                <div className="cluster gap-l">
+                <ul className="stack">
+                    <li>
+                        <p>
+                            <strong>
+                                <code>{`--cluster-gap`}</code>
+                            </strong>{" "}
+                            → adjusts the gap of the actual{" "}
+                            <strong>sidebar</strong> by changing the value of
+                            the <code>{`gap: []rem;`}</code> property. Its{" "}
+                            <strong>default value</strong> is{" "}
+                            <code>{`var(--space-s)`}</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>{`gap-[]`}</code> utility class in
+                                tailwind. E.g. <code>{`gap-m`}</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>
+                                <code>{`--cluster-justify`}</code>
+                            </strong>{" "}
+                            → adjusts the{" "}
+                            <strong>justification of the whole content</strong>{" "}
+                            inside the cluster by changing the value of the{" "}
+                            <code>{`justify-content: <value>;`}</code> property.
+                            Its <strong>default value</strong> is{" "}
+                            <code>{`start`}</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>{`justify-[]`}</code> utility class in
+                                tailwind. E.g. <code>{`justify-end`}</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>
+                                <code>{`--cluster-align`}</code>
+                            </strong>{" "}
+                            → adjusts the{" "}
+                            <strong>alignment of items, i.e. children</strong>{" "}
+                            inside the <strong>cluster</strong> by changing the{" "}
+                            <code>{`align-items: <value>`}</code> property. Its{" "}
+                            <strong>default value</strong> is{" "}
+                            <code>{`center`}</code>.
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Note</strong> you can also just change
+                                the <code>{`items-[]`}</code> utility class in
+                                tailwind. E.g. <code>{`items-end`}</code>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div className="cluster">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600">
+                            <div key={i} className="box bg-teal-500/60">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
@@ -27,11 +83,11 @@ export function TheCluster() {
                 <div className="cluster">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600">
+                            <div key={i} className="box bg-teal-500/60">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
@@ -44,11 +100,11 @@ export function TheCluster() {
                 <div className="cluster justify-center">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600">
+                            <div key={i} className="box bg-teal-500/60">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
@@ -61,11 +117,11 @@ export function TheCluster() {
                 <div className="cluster justify-end">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600">
+                            <div key={i} className="box bg-teal-500/60">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
@@ -78,11 +134,11 @@ export function TheCluster() {
                 <div className="cluster items-start">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600 p-2xl">
+                            <div key={i} className="box bg-teal-500/60 p-2xl">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
@@ -95,11 +151,11 @@ export function TheCluster() {
                 <div className="cluster items-center">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600 p-2xl">
+                            <div key={i} className="box bg-teal-500/60 p-2xl">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
@@ -112,11 +168,11 @@ export function TheCluster() {
                 <div className="cluster items-end">
                     {[...Array(10)].map((_, i) =>
                         i % 2 === 0 ? (
-                            <div key={i} className="box bg-teal-600 p-2xl">
+                            <div key={i} className="box bg-teal-500/60 p-2xl">
                                 Items that cluster
                             </div>
                         ) : (
-                            <div key={i} className="box bg-red-500/80">
+                            <div key={i} className="box bg-red-400/80">
                                 But stack where space is limited
                             </div>
                         )
