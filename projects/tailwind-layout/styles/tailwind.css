@@ -60,6 +60,7 @@
     }
     :where(p) {
         max-inline-size: theme(contentWidth.3);
+        line-height: theme(lineHeight.relaxed)
     }
     :where(h3, h4, h5, h6, dt) {
         max-inline-size: theme(headerWidth.3);
@@ -336,7 +337,7 @@
         justify-content: center;
     }
     .stack > * + * {
-        margin-block-start: var(--stack-gap, theme(spacing.m));
+        margin-block-start: var(--stack-gap, theme(spacing.l));
     }
     .stack:only-child {
         block-size: 100%;
@@ -376,7 +377,7 @@
     .sidebar {
         display: flex;
         flex-wrap: wrap;
-        gap: 0;
+        gap: var(--sidebar-gap, var(--space-xs));
     }
     .sidebar:not([data-direction]) > :first-child {
         flex-basis: var(--sidebar-width, theme(spacing.5xl));
