@@ -7,7 +7,14 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <BrowserRouter>
-            <div style={{ maxInlineSize: "60rem", marginInline: "auto" }}>
+            <div
+                className="center"
+                style={{
+                    maxInlineSize: "60rem",
+                    paddingBlockStart: "var(--space-2xl)",
+                    paddingBlockEnd: "var(--space-3xl)",
+                }}
+            >
                 <App />
             </div>
         </BrowserRouter>

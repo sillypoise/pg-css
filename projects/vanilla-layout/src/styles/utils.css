@@ -27,7 +27,7 @@
 }
 
 .debug {
-    outline: var(--border-size-2) solid;
+    outline: var(--border-size-3) solid;
     outline-offset: -var(--space-2xs);
     outline-color: var(--neutral-600);
 }

@@ -94,6 +94,13 @@
         Times, serif;
     --font-mono: "Dank Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
         Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-lineheight-00: 0.95;
+    --font-lineheight-0: 1.1;
+    --font-lineheight-1: 1.25;
+    --font-lineheight-2: 1.375;
+    --font-lineheight-3: 1.65;
+    --font-lineheight-4: 1.75;
+    --font-lineheight-5: 2;
     --content-width-1: 20ch;
     --content-width-2: 45ch;
     --content-width-3: 60ch;

@@ -36,7 +36,7 @@
 
 /* TYPOGRAPHY */
 :where(h1, h2, h3, h4, h5, h6, dt) {
-    color: var(--on-background);
+    color: var(--neutral-800);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
@@ -62,6 +62,7 @@
 }
 :where(p) {
     max-inline-size: var(--content-width-3);
+    line-height: var(--font-lineheight-4);
 }
 :where(h3, h4, h5, h6, dt) {
     max-inline-size: var(--header-width-3);
