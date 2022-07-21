@@ -187,7 +187,7 @@
     :where(:not(pre) > code) {
         background-color: var(--surface-5);
         border-radius: 0.375rem;
-        padding: var(--space-3xs) var(--space-3xs);
+        padding: 0.05rem var(--space-3xs);
     }
 
     :where(kbd, var) {
@@ -548,11 +548,9 @@
 
     .center {
         box-sizing: content-box;
-        /* max-inline-size: UTILITY */
-        max-inline-size: var(--center-width, --content-width-4);
+        max-inline-size: var(--center-width, var(--content-width-4));
         margin-inline: auto;
         position: relative;
-        /* padding-inline: UTILITY; */
         padding-inline: var(--center-padding, var(--space-s))
        
     }
@@ -978,12 +976,16 @@
         min-block-size: 50rem;
 }
 
-    .max-is-\[60rem\] {
-        max-inline-size: 60rem;
+    .max-is-\[\] {
+        max-inline-size: ;
 }
 
-    .max-is-\[60ch\] {
-        max-inline-size: 60ch;
+    .max-is-\[65ch\] {
+        max-inline-size: 65ch;
+}
+
+    .max-is-\[50ch\] {
+        max-inline-size: 50ch;
 }
 
     .mlb-auto {
@@ -1002,12 +1004,20 @@
         margin-block-end: auto;
 }
 
-    .pli-3xl {
-        padding-inline: var(--space-3xl);
+    .pli-\[\] {
+        padding-inline: ;
+}
+
+    .pli-\[3xl\] {
+        padding-inline: 3xl;
 }
 
     .pli-xl {
         padding-inline: var(--space-xl);
+}
+
+    .pli-3xs {
+        padding-inline: var(--space-3xs);
 }
 
     .pbs-2xl {
@@ -1032,6 +1042,10 @@
 
     .\[--center-width\:theme\(contentWidth\.3\)\] {
         --center-width: var(--content-width-3);
+}
+
+    .\[--center-padding\:theme\(spacing\.xl\)\] {
+        --center-padding: var(--space-xl);
 }
 
     .\[--center-width\:theme\(contentWidth\.1\)\] {
@@ -1064,6 +1078,10 @@
 
     .\[--sidebar-threshold\:70\%\] {
         --sidebar-threshold: 70%;
+}
+
+    .\[--center-width\:60rem\] {
+        --center-width: 60rem;
 }
 
     /* ### TW NORMALIZE ### */

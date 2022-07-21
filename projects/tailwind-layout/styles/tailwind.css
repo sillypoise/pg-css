@@ -161,7 +161,7 @@
     :where(:not(pre) > code) {
         background-color: var(--surface-5);
         border-radius: theme(borderRadius.md);
-        padding: theme(spacing.3xs) theme(spacing.3xs);
+        padding: 0.05rem theme(spacing.3xs);
     }
     :where(kbd, var) {
         border-color: var(--on-surface);
@@ -345,11 +345,9 @@
     /* ### THE CENTER ### */
     .center {
         box-sizing: content-box;
-        /* max-inline-size: UTILITY */
-        max-inline-size: var(--center-width, --content-width-4);
+        max-inline-size: var(--center-width, theme(contentWidth.4));
         margin-inline: auto;
         position: relative;
-        /* padding-inline: UTILITY; */
         padding-inline: var(--center-padding, theme(spacing.s))
        
     }

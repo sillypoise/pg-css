@@ -17,9 +17,10 @@
 /* ### THE CENTER ### */
 .center {
     box-sizing: content-box;
+    max-inline-size: var(--center-width, var(--content-width-3));
     margin-inline: auto;
     position: relative;
-    padding-inline: var(--space-xl)
+    padding-inline: var(--center-padding, var(--spacing-s))
 }
 /* ### THE BOX ### */
 .box {

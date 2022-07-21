@@ -10,7 +10,7 @@ export function TheBox() {
                     { "--stack-gap": "var(--space-xs)" } as React.CSSProperties
                 }
             >
-                <h2>The Box</h2>
+                <h1>The Box</h1>
                 <p>
                     This is the basic box primitive. You may see it around this
                     site being used for grouping of elements that <em>need</em>{" "}
