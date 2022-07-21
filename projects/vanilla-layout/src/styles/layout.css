@@ -20,9 +20,9 @@
     padding: var(--space-m);
     border: var(--border-size-2) solid;
     outline: var(--border-size-3) transparent;
-    outline-offset: calc(var(--border-size-2) * -1);
-    --color-light: var(--gray-100)
-    --color-dark: var(--gray-900)
+    outline-offset: calc(var(--border-size-3) * -1);
+    --color-light: var(--neutral-100)
+    --color-dark: var(--neutral-900)
     color: var(--on-background);
     background-color: var(--background)
 }

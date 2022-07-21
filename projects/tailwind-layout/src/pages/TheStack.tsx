@@ -1,6 +1,6 @@
 export function TheStack() {
     return (
-        <div className="center">
+        <article className="center">
             <div className="stack">
                 <h1>The Stack</h1>
                 <p>
@@ -82,6 +82,6 @@ export function TheStack() {
                     <div className="box">Try it out!</div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

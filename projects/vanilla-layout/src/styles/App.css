@@ -1,11 +1,11 @@
 :where(html) {
     /* COLORS */
     --primary: var(--sky-600);
-    --secondary: var(--slate-600);
-    --background: var(--neutral-100);
-    --on-background: var(--neutral-800);
-    --surface: var(--neutral-200);
-    --on-surface: var(--neutral-950);
+    --secondary: var(--slate-500);
+    --background: var(--neutral-200);
+    --on-background: var(--neutral-700);
+    --surface: var(--neutral-300);
+    --on-surface: var(--neutral-900);
     --surface-1: hsl(200 98% 39% / 0.05);
     --surface-2: hsl(200 98% 39% / 0.08);
     --surface-3: hsl(200 98% 39% / 0.11);
