@@ -6,6 +6,10 @@
     background-color: hsl(0 84% 60%/ 0.6);
 }
 
+.bg-gray {
+    background-color: rgb(209 213 219);
+}
+
 .bs-80 {
     block-size: 80rem;
 }

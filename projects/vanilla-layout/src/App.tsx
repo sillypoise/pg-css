@@ -6,6 +6,7 @@ import { TheCluster } from "./pages/TheCluster";
 import { TheGrid } from "./pages/TheGrid";
 import { TheSidebar } from "./pages/TheSidebar";
 import { TheStack } from "./pages/TheStack";
+import { TheSwitcher } from "./pages/TheSwitcher";
 
 import "./props.css";
 import "./reset.css";
@@ -38,6 +39,9 @@ function App() {
                     </li>
                     <li>
                         <Link to="/the-grid">The Grid</Link>
+                    </li>{" "}
+                    <li>
+                        <Link to="/the-switcher">The Switcher</Link>
                     </li>
                 </ul>
             </nav>
@@ -49,6 +53,7 @@ function App() {
                     <Route path="/the-cluster" element={<TheCluster />} />
                     <Route path="/the-center" element={<TheCenter />} />
                     <Route path="/the-grid" element={<TheGrid />} />
+                    <Route path="/the-switcher" element={<TheSwitcher />} />
                 </Routes>
             </main>
         </div>

@@ -15,20 +15,6 @@
     /* OTHER */
     --animation-duration: 0.1s;
 }
-
-@media (prefers-color-scheme: dark) {
-    :where(html) {
-        color-scheme: dark;
-        /* COLORS */
-        --primary: var(--sky-400);
-        --secondary: var(--slate-400);
-        --background: var(--neutral-980);
-        --on-background: var(--neutral-100);
-        --surface: var(--neutral-800);
-        --on-surface: var(--neutral-200);
-    }
-}
-
 /* BASE */
 :where(html) {
     font-family: var(--font-sans);
