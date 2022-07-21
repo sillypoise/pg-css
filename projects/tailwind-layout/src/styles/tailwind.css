@@ -1008,12 +1008,8 @@
         inset-block-start: 0%;
 }
 
-    .\[--stack-gap\:theme\(spacing\.m\)\] {
-        --stack-gap: var(--space-m);
-}
-
-    .\[--stack-gap\:theme\(spacing\.s\)\] {
-        --stack-gap: var(--space-s);
+    .\[--stack-gap\:theme\(spacing\.xs\)\] {
+        --stack-gap: var(--space-xs);
 }
 
     .\[--center-width\:theme\(contentWidth\.3\)\] {
@@ -1050,10 +1046,6 @@
 
     .\[--sidebar-threshold\:70\%\] {
         --sidebar-threshold: 70%;
-}
-
-    .\[--stack-gap\:theme\(spacing\.xs\)\] {
-        --stack-gap: var(--space-xs);
 }
 
     /* ### TW NORMALIZE ### */
