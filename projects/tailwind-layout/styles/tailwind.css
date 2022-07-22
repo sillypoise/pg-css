@@ -22,7 +22,6 @@
 
     :where(html) {
         font-family: theme(fontFamily.sans);
-        /* line-height: var(--font-lineheight-3); */
         text-rendering: optimizeLegibility;
         color-scheme: light;
         color: var(--on-background);
@@ -38,7 +37,7 @@
 
     :where(h1, h2, h3, h4, h5, h6) {
         font-weight: theme(fontWeight.black);
-        line-height: theme(lineHeight.tight);
+        line-height: theme(lineHeight.4);
     }
 
     :where(h1) {
@@ -60,7 +59,7 @@
     }
     :where(p) {
         max-inline-size: theme(contentWidth.3);
-        line-height: theme(lineHeight.normal)
+        line-height: theme(lineHeight.2)
     }
     :where(h3, h4, h5, h6, dt) {
         max-inline-size: theme(headerWidth.3);
@@ -406,10 +405,10 @@
     /* ### THE GRID ### */
     .auto-grid {
         display: grid;
-        gap: theme(spacing.s);
+        gap: var(--grid-gap, theme(spacing.s));
         grid-template-columns: repeat(
         var(--grid-placement, auto-fill),
-        minmax(var(--auto-grid-min, 16rem), 1fr));
+        minmax(var(--grid-min-width, 16rem), 1fr));
     }
     /* ### THE SWITCHER ### */
     .switcher {

@@ -3,6 +3,11 @@ export function TheCluster() {
         <div className="center">
             <div className="stack [--stack-gap:theme(spacing.l)]">
                 <h1>The Cluster</h1>
+                <p>
+                    Justs add the custom <code>{`cluster`}</code> class. Then
+                    proceed to customize the cluster's children through
+                    properties. Specifically:
+                </p>
                 <ul className="stack">
                     <li>
                         <p>

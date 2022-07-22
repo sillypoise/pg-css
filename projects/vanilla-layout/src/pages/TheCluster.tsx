@@ -4,7 +4,7 @@ export function TheCluster() {
             <div className="stack stack-gap:mbs-lg">
                 <h1>The Cluster</h1>
                 <p>
-                    Justs add the custom <code>cluster</code> class. Then
+                    Justs add the custom <code>{`cluster`}</code> class. Then
                     proceed to customize the cluster's children through
                     properties. Specifically:
                 </p>

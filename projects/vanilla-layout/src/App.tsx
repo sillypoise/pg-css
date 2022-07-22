@@ -43,6 +43,21 @@ function App() {
                     <li>
                         <Link to="/the-switcher">The Switcher</Link>
                     </li>
+                    <li>
+                        <Link to="/the-cover">The Cover</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-frame">The Frame</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-reel">The Reel</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-imposter">The Imposter</Link>
+                    </li>
+                    <li>
+                        <Link to="/the-icon">The Icon</Link>
+                    </li>
                 </ul>
             </nav>
             <main>

@@ -10,10 +10,10 @@ import { TheSwitcher } from "./pages/TheSwitcher";
 import { TheCover } from "./pages/TheCover";
 import { TheFrame } from "./pages/TheFrame";
 
-import { useState } from "react";
 import "./styles/sp-tw-props.css";
 import "./styles/reset.css";
 import "./styles/tailwind.css";
+
 import { TheReel } from "./pages/TheReel";
 import { TheImposter } from "./pages/TheImposter";
 import { TheIcon } from "./pages/TheIcon";
