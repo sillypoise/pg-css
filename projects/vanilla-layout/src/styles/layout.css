@@ -138,3 +138,26 @@
     block-size: 100%;
     object-fit: cover;
 }
+/* ### THE REEL ### */
+.reel {
+    display: flex;
+    gap: var(--reel-gap ,var(--space-s));
+    overflow-x: auto;
+    overflow-y: hidden;
+    block-size: auto;
+    border-width: var(--reel-border, var(--border-size-3));
+}
+.reel > img {
+    block-size: 100%;
+    width: auto;
+}
+.reel > * {
+    flex: 0 0 var(--reel-item-width, var(--space-5xl));
+    margin: var(--reel-item-margin ,var(--space-s));
+    margin-inline-end: 0;
+}
+.reel::after {
+    content: '';
+    flex-basis: var(--reel-after-margin ,var(--space-3xs));
+    flex-shrink: 0;
+}

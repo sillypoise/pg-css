@@ -458,10 +458,11 @@
     /* ### THE REEL ### */
     .reel {
         display: flex;
+        gap: var(--reel-gap ,theme(spacing.s));
         overflow-x: auto;
         overflow-y: hidden;
         block-size: auto;
-        border-width: theme(borderWidth.3);
+        border-width: var(--reel-border, theme(borderWidth.3));
     }
     .reel > img {
         block-size: 100%;
@@ -469,12 +470,12 @@
     }
     .reel > * {
         flex: 0 0 var(--reel-item-width, theme(spacing.5xl));
-        margin: theme(spacing.s);
+        margin: var(--reel-item-margin ,theme(spacing.s));
         margin-inline-end: 0;
     }
     .reel::after {
         content: '';
-        flex-basis: theme(spacing.3xs);
+        flex-basis: var(--reel-after-margin ,theme(spacing.3xs));
         flex-shrink: 0;
     }
     /* ### THE IMPOSTER ### */
