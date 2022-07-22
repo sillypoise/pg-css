@@ -154,7 +154,7 @@ export function TheImposter() {
                             "--imposter-inset-inline": "100%",
                             "--imposter-inset-block": "0%",
                             borderRadius: "9999px",
-                            backgroundColor: "red",
+                            backgroundColor: "var(--red-500)",
                         } as React.CSSProperties
                     }
                 >

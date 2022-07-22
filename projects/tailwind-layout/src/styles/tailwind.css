@@ -1079,8 +1079,32 @@
         --grid-min-width: 10rem;
 }
 
+    .\[--icon-space\:theme\(spacing\.2xl\)\] {
+        --icon-space: var(--space-2xl);
+}
+
+    .\[--stack-gap\:theme\(spacing\.2xl\)\] {
+        --stack-gap: var(--space-2xl);
+}
+
     .\[--imposter-margin\:theme\(spacing\.s\)\] {
         --imposter-margin: var(--space-s);
+}
+
+    .\[--imposter-margin\:theme\(spacing\.l\)\] {
+        --imposter-margin: var(--space-l);
+}
+
+    .\[--imposter-positioning\:fixed\] {
+        --imposter-positioning: fixed;
+}
+
+    .\[--imposter-inset-block\:90\%\] {
+        --imposter-inset-block: 90%;
+}
+
+    .\[--imposter-inset-inline\:50\%\] {
+        --imposter-inset-inline: 50%;
 }
 
     .\[--reel-item-width\:40ch\] {
@@ -1117,58 +1141,6 @@
 
     .\[--switcher-threshold\:25rem\] {
         --switcher-threshold: 25rem;
-}
-
-    .\[--stack-gap\:theme\(spacing\.xl\)\] {
-        --stack-gap: var(--space-xl);
-}
-
-    .\[--stack-gap\:theme\(spacing\.3xl\)\] {
-        --stack-gap: var(--space-3xl);
-}
-
-    .\[--stack-gap\:theme\(spacing\.2xl\)\] {
-        --stack-gap: var(--space-2xl);
-}
-
-    .\[--imposter-margin\:theme\(spacing\.xl\)\] {
-        --imposter-margin: var(--space-xl);
-}
-
-    .\[--imposter-margin\:theme\(spacing\.l\)\] {
-        --imposter-margin: var(--space-l);
-}
-
-    .\[--imposter-positioning\:fixed\] {
-        --imposter-positioning: fixed;
-}
-
-    .\[--imposter-inset-inline\:50\%\] {
-        --imposter-inset-inline: 50%;
-}
-
-    .\[--imposter-inset-block\:9\%\] {
-        --imposter-inset-block: 9%;
-}
-
-    .\[--imposter-inset-block\:89\%\] {
-        --imposter-inset-block: 89%;
-}
-
-    .\[--imposter-inset-block\:88\%\] {
-        --imposter-inset-block: 88%;
-}
-
-    .\[--imposter-inset-block\:90\%\] {
-        --imposter-inset-block: 90%;
-}
-
-    .\[--imposter-inset-block\:80\%\] {
-        --imposter-inset-block: 80%;
-}
-
-    .\[--imposter-inset-block\:87\%\] {
-        --imposter-inset-block: 87%;
 }
 
     /* ### TW NORMALIZE ### */

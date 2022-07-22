@@ -6,6 +6,7 @@ import { TheCluster } from "./pages/TheCluster";
 import { TheCover } from "./pages/TheCover";
 import { TheFrame } from "./pages/TheFrame";
 import { TheGrid } from "./pages/TheGrid";
+import { TheIcon } from "./pages/TheIcon";
 import { TheImposter } from "./pages/TheImposter";
 import { TheReel } from "./pages/TheReel";
 import { TheSidebar } from "./pages/TheSidebar";
@@ -77,6 +78,7 @@ function App() {
                     <Route path="/the-frame" element={<TheFrame />} />
                     <Route path="/the-reel" element={<TheReel />} />
                     <Route path="/the-imposter" element={<TheImposter />} />
+                    <Route path="/the-icon" element={<TheIcon />} />
                 </Routes>
             </main>
         </div>

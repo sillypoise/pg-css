@@ -1,3 +1,5 @@
+import React from "react";
+
 export function TheIcon() {
     return (
         <div className="stack">
@@ -40,12 +42,22 @@ export function TheIcon() {
             <p>
                 Override the <code>{`--icon-space`}</code> custom property to
                 adjust the margin between the icon and the text. E.g.{" "}
-                <code>{`--icon-space:theme(spacing.l)`}</code>
+                <code>{`--icon-space:var(--space-l)`}</code>
             </p>
             <div className="box">
-                <p className="text-3 text-red-600">
+                <p
+                    style={{
+                        fontSize: "var(--step-3)",
+                        color: "var(--red-600)",
+                    }}
+                >
                     <span
-                        className="with-icon [--icon-space:theme(spacing.2xl)]"
+                        className="with-icon"
+                        style={
+                            {
+                                "--icon-space": "var(--space-2xl)",
+                            } as React.CSSProperties
+                        }
                         aria-label="close"
                     >
                         <svg
