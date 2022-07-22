@@ -425,15 +425,15 @@
     .cover {
         display: flex;
         flex-direction: column;
-        min-block-size: 100vh;
+        min-block-size: var(--cover-min-block, 100vh);
         padding: 0;
     }
     .cover > * {
-        margin-block: theme(spacing.s)
+        margin-block: var(--cover-spacing, theme(spacing.xs))
     }
     .cover-target {
         margin-block: auto;
-        /* align-self: center; */
+        align-self: center;
     }
     .cover > :first-child:not(.cover-target) {
         margin-block: 0;

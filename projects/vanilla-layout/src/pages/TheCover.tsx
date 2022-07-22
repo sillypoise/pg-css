@@ -1,3 +1,5 @@
+import React from "react";
+
 export function TheCover() {
     return (
         <div className="center">
@@ -24,17 +26,12 @@ export function TheCover() {
                     <code>{`--cover-min-block`}</code> custom property. E.g.{" "}
                     <code>{`--cover-min-block: 40rem`}</code>
                 </p>
-                <p>
-                    You can also just adjust the <code>{`min-bs-[]`}</code>{" "}
-                    utility class in tailwind to adjust the block size of the
-                    container.
-                </p>
                 <div className="cover | debug">
-                    <header className="box | bg-teal-500/80">HEADER</header>
-                    <h1 className="cover-target | box  bg-red-400/80">
+                    <header className="box | bg-teal">HEADER</header>
+                    <h1 className="cover-target | box  bg-red">
                         I AM THE CONTENT YOU WANT FRONT AND CENTER!!!
                     </h1>
-                    <footer className="box | bg-teal-500/80">FOOTER</footer>
+                    <footer className="box | bg-teal">FOOTER</footer>
                 </div>
                 <hr />
                 <p>
@@ -42,13 +39,20 @@ export function TheCover() {
                     between the children that are being push by overriding the{" "}
                     <code>{`--cover-spacing`}</code> property. Its{" "}
                     <strong>default value</strong> is set to{" "}
-                    <code>{`theme(spacing.xs)`}</code>
+                    <code>{`var(--space-xs)`}</code>
                 </p>
-                <div className="cover [--cover-spacing:theme(spacing.3xs)] | debug">
-                    <header className="box | bg-teal-500/80">HEADER</header>
+                <div
+                    className="cover | debug"
+                    style={
+                        {
+                            "--cover-spacing": "var(--space-3xs)",
+                        } as React.CSSProperties
+                    }
+                >
+                    <header className="box bg-teal">HEADER</header>
                     <div className="box">A</div>
                     <div className="box">B</div>
-                    <div className="box  bg-red-400/80">
+                    <div className="box  bg-red">
                         I was... the content you previously had front and center
                         😢
                     </div>
@@ -56,7 +60,7 @@ export function TheCover() {
                         🏴‍☠️ I AM THE CAPTAIN NOW
                     </h3>
                     <div className="box">B</div>
-                    <footer className="box | bg-teal-500/80">FOOTER</footer>
+                    <footer className="box bg-teal">FOOTER</footer>
                 </div>
                 <hr />
                 <p>
@@ -69,20 +73,34 @@ export function TheCover() {
                     <code>{`--cover-min-block`}</code> value is{" "}
                     <code>{`60rem`}</code>
                 </p>
-                <div className="cover [--cover-min-block:60rem] | debug">
-                    <h1 className="cover-target | box bg-red-400/80">
+                <div
+                    className="cover | debug"
+                    style={
+                        {
+                            "--cover-min-block": "60rem",
+                        } as React.CSSProperties
+                    }
+                >
+                    <h1 className="cover-target box bg-red">
                         I AM THE CONTENT YOU WANT FRONT AND CENTER!!!
                     </h1>
-                    <div className="box | bg-teal-500/80">FOOTER</div>
+                    <div className="box bg-teal">FOOTER</div>
                 </div>
                 <p>
                     Only a single element above our target. None below it.{" "}
-                    <code>{`min-bs-[]`}</code> value is{" "}
-                    <code>{`min-bs-[60rem]`}</code>
+                    <code>{`--cover-min-block`}</code> value is{" "}
+                    <code>{`60rem`}</code>
                 </p>
-                <div className="cover min-bs-[60rem] | debug">
-                    <div className="box bg-teal-500/80">HEADER</div>
-                    <h1 className="cover-target | box bg-red-400/80">
+                <div
+                    className="cover | debug"
+                    style={
+                        {
+                            "--cover-min-block": "60rem",
+                        } as React.CSSProperties
+                    }
+                >
+                    <div className="box bg-teal">HEADER</div>
+                    <h1 className="cover-target box bg-red">
                         I AM THE CONTENT YOU WANT FRONT AND CENTER!!!
                     </h1>
                 </div>
