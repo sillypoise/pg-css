@@ -5,7 +5,6 @@
 /* ### TW NORMALIZE ### */
 @layer base {
     /* ### COLORS ### */
-
     :where(html) {
         --primary: theme(colors.sky.600);
         --secondary: theme(colors.slate.500);
@@ -37,7 +36,7 @@
 
     :where(h1, h2, h3, h4, h5, h6) {
         font-weight: theme(fontWeight.black);
-        line-height: theme(lineHeight.4);
+        line-height: theme(lineHeight.2);
     }
 
     :where(h1) {
@@ -59,7 +58,7 @@
     }
     :where(p) {
         max-inline-size: theme(contentWidth.3);
-        line-height: theme(lineHeight.2)
+        line-height: theme(lineHeight.3);
     }
     :where(h3, h4, h5, h6, dt) {
         max-inline-size: theme(headerWidth.3);

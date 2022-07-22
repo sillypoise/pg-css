@@ -1,11 +1,11 @@
 :where(html) {
     /* COLORS */
     --primary: var(--sky-600);
-    --secondary: var(--slate-600);
-    --background: var(--neutral-100);
-    --on-background: var(--neutral-800);
-    --surface: var(--neutral-200);
-    --on-surface: var(--neutral-950);
+    --secondary: var(--slate-500);
+    --background: var(--neutral-200);
+    --on-background: var(--neutral-700);
+    --surface: var(--neutral-300);
+    --on-surface: var(--neutral-900);
     --surface-1: hsl(200 98% 39% / 0.05);
     --surface-2: hsl(200 98% 39% / 0.08);
     --surface-3: hsl(200 98% 39% / 0.11);
@@ -20,12 +20,12 @@
     :where(html) {
         color-scheme: dark;
         /* COLORS */
-        --primary: var(--sky-400);
+        /* --primary: var(--sky-400);
         --secondary: var(--slate-400);
         --background: var(--neutral-980);
         --on-background: var(--neutral-100);
         --surface: var(--neutral-800);
-        --on-surface: var(--neutral-200);
+        --on-surface: var(--neutral-200); */
     }
 }
 
@@ -50,7 +50,7 @@
 
 /* TYPOGRAPHY */
 :where(h1, h2, h3, h4, h5, h6, dt) {
-    color: var(--on-background);
+    color: var(--neutral-800);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
@@ -76,6 +76,7 @@
 }
 :where(p) {
     max-inline-size: var(--content-width-3);
+    line-height: var(--font-lineheight-3);
 }
 :where(h3, h4, h5, h6, dt) {
     max-inline-size: var(--header-width-3);
@@ -99,10 +100,10 @@
     touch-action: manipulation;
 }
 :where(a) {
-    margin-block: calc(var(--space-s) * -1);
-    margin-inline: calc(var(--space-s) * -1);
-    padding-block: var(--space-s);
-    padding-inline: var(--space-s);
+    margin-block: calc(var(--space-2xs) * -1);
+    margin-inline: calc(var(--space-2xs) * -1);
+    padding-block: var(--space-2xs);
+    padding-inline: var(--space-2xs);
 }
 :where(a):where([href]) {
     text-decoration-color: var(--primary);
@@ -177,7 +178,7 @@
 :where(:not(pre) > code) {
     background-color: var(--surface-5);
     border-radius: var(--radius-2);
-    padding: var(--space-3xs) var(--space-2xs);
+    padding: 0.1rem var(--space-3xs);
 }
 :where(kbd, var) {
     border-color: var(--on-surface);
