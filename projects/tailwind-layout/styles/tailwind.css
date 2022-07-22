@@ -336,7 +336,7 @@
         justify-content: center;
     }
     .stack > * + * {
-        margin-block-start: var(--stack-gap, theme(spacing.l));
+        margin-block-start: var(--stack-gap, theme(spacing.m));
     }
     .stack:only-child {
         block-size: 100%;
