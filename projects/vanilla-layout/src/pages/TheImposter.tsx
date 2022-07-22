@@ -1,3 +1,5 @@
+import React from "react";
+
 export function TheImposter() {
     return (
         <div className="stack">
@@ -12,8 +14,13 @@ export function TheImposter() {
                 relative container to be. This can easily be done by a utility
                 class or your preferred method
             </p>
-            <div className="box relative">
-                <p className="p-xl">
+            <div
+                className="box"
+                style={{
+                    position: "relative",
+                }}
+            >
+                <p style={{ padding: "var(--space-xl)" }}>
                     {" "}
                     Static content that lives behind the imposter, you can tell
                     because it reaches the other side.
@@ -28,18 +35,37 @@ export function TheImposter() {
                 <code>{`imposter-contained`}</code> class. This is useful if you
                 want to keep to imposter conained inside a specific element
             </p>
-
-            <div className="stack [--stack-gap:theme(spacing.2xl)]">
+            <div
+                className="stack"
+                style={
+                    {
+                        "--stack-gap": "var(--space-2xl)",
+                    } as React.CSSProperties
+                }
+            >
                 <p>
                     Without <code>{`imposter-contained`}</code>. Only{" "}
                     <code>{`imposter`}</code> class applied.
                 </p>
-                <div className="box relative">
-                    <p className="p-xl">
+                <div
+                    className="box"
+                    style={{
+                        position: "relative",
+                    }}
+                >
+                    <p style={{ padding: "var(--space-xl)" }}>
                         Static content that lives behind the imposter, you can
                         tell because it reaches the other side.
                     </p>
-                    <div className="imposter [--imposter-margin:theme(spacing.s)] box p-xs">
+                    <div
+                        className="imposter box"
+                        style={
+                            {
+                                padding: "var(--space-xs)",
+                                "--imposter-margin": "var(--space-s)",
+                            } as React.CSSProperties
+                        }
+                    >
                         <p>
                             Terms of Service Lorem ipsum dolor, sit amet
                             consectetur adipisicing elit. Voluptas, quam laborum
@@ -56,14 +82,27 @@ export function TheImposter() {
                     <strong>Note</strong> we can adjust the margins of the
                     contained imposter, against its container, by overriding the{" "}
                     <code>{`--imposter-margin`}</code> custom property. E.g.{" "}
-                    <code>{`[--imposter-margin:theme(spacing.l)]`}</code>
+                    <code>{`[--imposter-margin:var(--space-l)]`}</code>
                 </p>
-                <div className="box relative">
-                    <p className="p-xl">
+                <div
+                    className="box"
+                    style={{
+                        position: "relative",
+                    }}
+                >
+                    <p style={{ padding: "var(--space-xl)" }}>
                         Static content that lives behind the imposter, you can
                         tell because it reaches the other side.
                     </p>
-                    <div className="imposter imposter-contained [--imposter-margin:theme(spacing.l)] box p-xs">
+                    <div
+                        className="imposter imposter-contained box"
+                        style={
+                            {
+                                padding: "var(--space-xs)",
+                                "--imposter-margin": "var(--space-l)",
+                            } as React.CSSProperties
+                        }
+                    >
                         <p>
                             <strong>Terms of Service</strong> Lorem ipsum dolor,
                             sit amet consectetur adipisicing elit. Voluptas,
@@ -82,25 +121,43 @@ export function TheImposter() {
                 to be placed in the center but we can move it around to our
                 heart's content by altering the &nbsp;{" "}
                 <code>inset-block-start</code> and the &nbsp;{" "}
-                <code>inset-inline-start</code> properties. Either by overriding
-                the <code>--imposter-inset-inline</code> and the{" "}
+                <code>inset-inline-start</code> properties. We can do so by
+                overriding the <code>--imposter-inset-inline</code> and the{" "}
                 <code>--imposter-inset-block</code> custom properties or adding
-                tailwind utility classes or arbitrary properties. E.g.{" "}
-                <code>inline-start-[]</code> and <code>block-start-[]</code>
+                inline styles for those properties.
             </p>
             <p>
                 Create a notification bell by adjusting the{" "}
                 <strong>inset</strong> values. E.g.{" "}
-                <code>{`inline-start-[100%]`}</code> and{" "}
-                <code>{`block-start-[0%]`}</code>
+                <code>{`--imposter-inset-inline: 100%`}</code> and{" "}
+                <code>{`--imposter-inset-block: 0%`}</code>
             </p>
-            <div className="box relative">
-                <p className="p-xl">
+            <div
+                className="box"
+                style={{
+                    position: "relative",
+                }}
+            >
+                <p
+                    style={{
+                        padding: "var(--space-xl)",
+                    }}
+                >
                     {" "}
                     Static content that lives behind the imposter, you can tell
                     because it reaches the other side.
                 </p>
-                <div className="imposter inline-start-[100%] block-start-[0%] box | rounded-full bg-red-600">
+                <div
+                    className="imposter box"
+                    style={
+                        {
+                            "--imposter-inset-inline": "100%",
+                            "--imposter-inset-block": "0%",
+                            borderRadius: "9999px",
+                            backgroundColor: "red",
+                        } as React.CSSProperties
+                    }
+                >
                     <p>🔔</p>
                 </div>
             </div>
@@ -111,14 +168,21 @@ export function TheImposter() {
                 <code>{`relative`}</code> value, within the document, you can
                 overwrite the <code>{`--imposter-positioning`}</code> with a{" "}
                 <code>{`fixed`}</code> value. This is often desirable for
-                <strong>dialogs</strong>, which should follow the user as they
-                scroll the document, and remain in view until tended to. Like
-                our friendly <strong>red baloon</strong>(<span>🎈</span>)
-                example below.
+                dialogs, which should follow the user as they scroll the
+                document, and remain in view until tended to. Like our friendly{" "}
+                <strong>red baloon</strong>(<span>🎈</span>) example below.
             </p>
             <dialog
                 open
-                className="imposter [--imposter-positioning:fixed] [--imposter-inset-block:90%] [--imposter-inset-inline:50%] box p-xs"
+                className="imposter box"
+                style={
+                    {
+                        padding: "var(--space-xs)",
+                        "--imposter-positioning": "fixed",
+                        "--imposter-inset-inline": "50%",
+                        "--imposter-inset-block": "89%",
+                    } as React.CSSProperties
+                }
             >
                 <p>
                     <span>🎈</span> We have overridden the{" "}

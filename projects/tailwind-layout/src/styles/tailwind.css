@@ -569,8 +569,6 @@
 
     .box * {
         color: inherit;
-        background-color: inherit;
-        border-radius: inherit
     }
 
     .box.invert {
@@ -717,15 +715,15 @@
 
     .imposter {
         position: var(--imposter-positioning, absolute);
-        inset-block-start: 50%;
-        inset-inline-start: 50%;
+        inset-block-start: var(--imposter-inset-block, 50%);
+        inset-inline-start: var(--imposter-inset-inline, 50%);
         transform: translate(-50%, -50%);
     }
 
-    .imposter-container {
+    .imposter-contained {
         overflow: auto;
-        max-inline-size: calc(100% - (var(--imposter-container-margin, 0px) * 2));
-        max-block-size: calc(100% - (var(--imposter-container-margin, 0px) * 2));
+        max-inline-size: calc(100% - (var(--imposter-margin, 0px) * 2));
+        max-block-size: calc(100% - (var(--imposter-margin, 0px) * 2));
     }
 
     /* ### THE ICON ### */
@@ -751,6 +749,10 @@
         outline-offset: -theme(spacing.2xs);
         outline-color: #525252;
     }
+
+    .fixed {
+        position: fixed;
+}
 
     .relative {
         position: relative;
@@ -1021,6 +1023,14 @@
         padding-block-end: var(--space-3xl);
 }
 
+    .inline-start-\[\] {
+        inset-inline-start: ;
+}
+
+    .block-start-\[\] {
+        inset-block-start: ;
+}
+
     .inline-start-\[100\%\] {
         inset-inline-start: 100%;
 }
@@ -1069,8 +1079,8 @@
         --grid-min-width: 10rem;
 }
 
-    .\[--imposter-container-margin\:theme\(spacing\.s\)\] {
-        --imposter-container-margin: var(--space-s);
+    .\[--imposter-margin\:theme\(spacing\.s\)\] {
+        --imposter-margin: var(--space-s);
 }
 
     .\[--reel-item-width\:40ch\] {
@@ -1083,6 +1093,10 @@
 
     .\[--reel-item-margin\:theme\(spacing\.l\)\] {
         --reel-item-margin: var(--space-l);
+}
+
+    .\[--reel-border\:0\] {
+        --reel-border: 0;
 }
 
     .\[--sidebar-width\:theme\(spacing\.6xl\)\] {
@@ -1105,8 +1119,56 @@
         --switcher-threshold: 25rem;
 }
 
-    .\[--reel-border\:0\] {
-        --reel-border: 0;
+    .\[--stack-gap\:theme\(spacing\.xl\)\] {
+        --stack-gap: var(--space-xl);
+}
+
+    .\[--stack-gap\:theme\(spacing\.3xl\)\] {
+        --stack-gap: var(--space-3xl);
+}
+
+    .\[--stack-gap\:theme\(spacing\.2xl\)\] {
+        --stack-gap: var(--space-2xl);
+}
+
+    .\[--imposter-margin\:theme\(spacing\.xl\)\] {
+        --imposter-margin: var(--space-xl);
+}
+
+    .\[--imposter-margin\:theme\(spacing\.l\)\] {
+        --imposter-margin: var(--space-l);
+}
+
+    .\[--imposter-positioning\:fixed\] {
+        --imposter-positioning: fixed;
+}
+
+    .\[--imposter-inset-inline\:50\%\] {
+        --imposter-inset-inline: 50%;
+}
+
+    .\[--imposter-inset-block\:9\%\] {
+        --imposter-inset-block: 9%;
+}
+
+    .\[--imposter-inset-block\:89\%\] {
+        --imposter-inset-block: 89%;
+}
+
+    .\[--imposter-inset-block\:88\%\] {
+        --imposter-inset-block: 88%;
+}
+
+    .\[--imposter-inset-block\:90\%\] {
+        --imposter-inset-block: 90%;
+}
+
+    .\[--imposter-inset-block\:80\%\] {
+        --imposter-inset-block: 80%;
+}
+
+    .\[--imposter-inset-block\:87\%\] {
+        --imposter-inset-block: 87%;
 }
 
     /* ### TW NORMALIZE ### */

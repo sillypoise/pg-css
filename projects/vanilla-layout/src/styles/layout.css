@@ -35,8 +35,6 @@
 }
 .box * {
     color: inherit;
-    background-color: inherit;
-    border-radius: inherit
 }
 .box.invert {
     color: var(--background);
@@ -160,4 +158,16 @@
     content: '';
     flex-basis: var(--reel-after-margin ,var(--space-3xs));
     flex-shrink: 0;
+}
+/* ### THE IMPOSTER ### */
+.imposter {
+    position: var(--imposter-positioning, absolute);
+    inset-block-start: var(--imposter-inset-block, 50%);
+    inset-inline-start: var(--imposter-inset-inline, 50%);
+    transform: translate(-50%, -50%);
+}
+.imposter-contained {
+    overflow: auto;
+    max-inline-size: calc(100% - (var(--imposter-margin, 0px) * 2));
+    max-block-size: calc(100% - (var(--imposter-margin, 0px) * 2));
 }
