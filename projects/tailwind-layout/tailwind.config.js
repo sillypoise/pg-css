@@ -118,8 +118,8 @@ module.exports = {
             matchVariant(
                 {
                     "switcher-max-child": (val) => [
-                        `& > :nth-child(n+${val})`,
-                        `& > :nth-child(n+${val})~*`,
+                        `& > :nth-last-child(n+${val})`,
+                        `& > :nth-last-child(n+${val})~*`,
                     ],
                 },
                 {

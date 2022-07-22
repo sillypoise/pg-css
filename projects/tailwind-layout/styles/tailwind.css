@@ -414,7 +414,7 @@
     .switcher {
        display: flex;
        flex-wrap: wrap;
-       gap: theme(spacing.s);
+       gap: var(--switcher-gap, theme(spacing.s));
         /* --threshold: 30rem; */
     }
     .switcher > * {
