@@ -2,11 +2,27 @@ export function TheFrame() {
     return (
         <div className="center ">
             <div className="stack">
-                <h1>Aspect Ratio</h1>
-                <h3>Formerly known as the Frame.</h3>
+                <h1>The Frame</h1>
                 <p>
-                    Now it's basically to just learn how to use{" "}
-                    <code>aspect-ratio</code> property
+                    A handy container for images, videos and canvases in which
+                    it will mantain the content centered and in the appropriate
+                    indicated aspect ratio.
+                </p>
+                <p>
+                    Simply add the <code>{`frame`}</code> class to your
+                    container. To define the aspect ratio that container should
+                    mantain override the{" "}
+                    <strong>
+                        <code>{`--frame-ratio`}</code>
+                    </strong>{" "}
+                    custom property, which adjusts the{" "}
+                    <code>{`aspect-ratio`}</code> property. Its{" "}
+                    <strong>default value</strong> is <code>{`1`}</code>.
+                </p>
+                <p>
+                    Alternatively you can also override the{" "}
+                    <code>{`aspect-ratio`}</code> property by using the{" "}
+                    <code>{`aspect-[]`}</code> utlilty class in tailwind
                 </p>
                 <p>
                     <code>aspect-[1]</code> - (<code>1:1</code>)

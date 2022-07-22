@@ -444,6 +444,7 @@
     /* ### THE FRAME ### */
     .frame {
         overflow: hidden;
+        aspect-ratio: var(--frame-ratio, 1);
         display: flex;
         justify-content: center;
         align-items: center;

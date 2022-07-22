@@ -672,6 +672,7 @@
 
     .frame {
         overflow: hidden;
+        aspect-ratio: var(--frame-ratio, 1);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -804,6 +805,10 @@
 
     .aspect-\[4\.0\] {
         aspect-ratio: 4.0;
+}
+
+    .aspect-\[\] {
+        aspect-ratio: ;
 }
 
     .flex-grow {
@@ -996,16 +1001,8 @@
         max-inline-size: 50ch;
 }
 
-    .mbs-\[\] {
-        margin-block-start: ;
-}
-
     .mbe-auto {
         margin-block-end: auto;
-}
-
-    .mbs-\[60rem\] {
-        margin-block-start: 60rem;
 }
 
     .pli-\[\] {
