@@ -17,10 +17,10 @@
 /* ### THE CENTER ### */
 .center {
     box-sizing: content-box;
-    max-inline-size: var(--center-width, var(--content-width-3));
+    max-inline-size: var(--center-width, var(--content-width-4));
     margin-inline: auto;
     position: relative;
-    padding-inline: var(--center-padding, var(--spacing-s))
+    padding-inline: var(--center-padding, var(--space-s))
 }
 /* ### THE BOX ### */
 .box {
@@ -83,10 +83,10 @@
 /* ### THE GRID ### */
 .auto-grid {
     display: grid;
-    gap: var(--space-s);
+    gap: var(--grid-gap, var(--space-s));
     grid-template-columns: repeat(
         var(--grid-placement, auto-fill),
-        minmax(var(--grid-item-min-widh, 16rem), 1fr)
+        minmax(var(--grid-min-width, 16rem), 1fr)
     )
 }
 

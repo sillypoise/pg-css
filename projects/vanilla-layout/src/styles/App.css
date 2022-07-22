@@ -18,7 +18,6 @@
 /* BASE */
 :where(html) {
     font-family: var(--font-sans);
-    line-height: var(--font-lineheight-3);
     text-rendering: optimizeLegibility;
     color-scheme: light;
     color: var(--on-surface);
@@ -41,7 +40,7 @@
 
 :where(h1, h2, h3, h4, h5, h6) {
     font-weight: var(--font-weight-900);
-    line-height: var(--font-lineheight-2);
+    line-height: var(--font-lineheight-4);
 }
 :where(h1) {
     font-size: var(--step-7);
@@ -62,7 +61,7 @@
 }
 :where(p) {
     max-inline-size: var(--content-width-3);
-    line-height: var(--font-lineheight-3);
+    line-height: var(--font-lineheight-2);
 }
 :where(h3, h4, h5, h6, dt) {
     max-inline-size: var(--header-width-3);
