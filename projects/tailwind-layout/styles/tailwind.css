@@ -363,8 +363,6 @@
     }
     .box * {
         color: inherit;
-        background-color: inherit;
-        border-radius: inherit
     }
     .box.invert {
         color: var(--background);
@@ -481,14 +479,14 @@
     /* ### THE IMPOSTER ### */
     .imposter {
         position: var(--imposter-positioning, absolute);
-        inset-block-start: 50%;
-        inset-inline-start: 50%;
+        inset-block-start: var(--imposter-inset-block, 50%);
+        inset-inline-start: var(--imposter-inset-inline, 50%);
         transform: translate(-50%, -50%);
     }
-    .imposter-container {
+    .imposter-contained {
         overflow: auto;
-        max-inline-size: calc(100% - (var(--imposter-container-margin, 0px) * 2));
-        max-block-size: calc(100% - (var(--imposter-container-margin, 0px) * 2));
+        max-inline-size: calc(100% - (var(--imposter-margin, 0px) * 2));
+        max-block-size: calc(100% - (var(--imposter-margin, 0px) * 2));
     }
     /* ### THE ICON ### */
     .icon {
