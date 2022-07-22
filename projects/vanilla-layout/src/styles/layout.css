@@ -124,4 +124,17 @@
 .cover > :last-child:not(.cover-target) {
     margin-block: 0;
 }
-
+/* ### THE FRAME ### */
+.frame {
+    overflow: hidden;
+    aspect-ratio: var(--frame-ratio, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame > img,
+.frame > video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}

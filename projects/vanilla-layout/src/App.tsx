@@ -4,6 +4,7 @@ import { TheBox } from "./pages/TheBox";
 import { TheCenter } from "./pages/TheCenter";
 import { TheCluster } from "./pages/TheCluster";
 import { TheCover } from "./pages/TheCover";
+import { TheFrame } from "./pages/TheFrame";
 import { TheGrid } from "./pages/TheGrid";
 import { TheSidebar } from "./pages/TheSidebar";
 import { TheStack } from "./pages/TheStack";
@@ -71,6 +72,7 @@ function App() {
                     <Route path="/the-grid" element={<TheGrid />} />
                     <Route path="/the-switcher" element={<TheSwitcher />} />
                     <Route path="/the-cover" element={<TheCover />} />
+                    <Route path="/the-frame" element={<TheFrame />} />
                 </Routes>
             </main>
         </div>
