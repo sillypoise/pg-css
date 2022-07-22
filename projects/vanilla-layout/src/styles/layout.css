@@ -104,4 +104,24 @@
 .switcher > :nth-last-child(n+5) ~ * {
     flex-basis: 100%;
 }
+    /* ### THE COVER ### */
+.cover {
+    display: flex;
+    flex-direction: column;
+    min-block-size: var(--cover-min-block, 100vh);
+    padding: 0;
+}
+.cover > * {
+    margin-block: var(--cover-spacing, var(--space-xs))
+}
+.cover-target {
+    margin-block: auto;
+    align-self: center;
+}
+.cover > :first-child:not(.cover-target) {
+    margin-block: 0;
+}
+.cover > :last-child:not(.cover-target) {
+    margin-block: 0;
+}
 

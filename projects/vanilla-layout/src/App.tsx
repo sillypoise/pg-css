@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { TheBox } from "./pages/TheBox";
 import { TheCenter } from "./pages/TheCenter";
 import { TheCluster } from "./pages/TheCluster";
+import { TheCover } from "./pages/TheCover";
 import { TheGrid } from "./pages/TheGrid";
 import { TheSidebar } from "./pages/TheSidebar";
 import { TheStack } from "./pages/TheStack";
@@ -69,6 +70,7 @@ function App() {
                     <Route path="/the-center" element={<TheCenter />} />
                     <Route path="/the-grid" element={<TheGrid />} />
                     <Route path="/the-switcher" element={<TheSwitcher />} />
+                    <Route path="/the-cover" element={<TheCover />} />
                 </Routes>
             </main>
         </div>
