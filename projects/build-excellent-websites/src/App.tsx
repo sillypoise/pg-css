@@ -1,12 +1,12 @@
-import { CSSProperties } from "react";
+import "./styles/tailwind.css";
 
 function App() {
     return (
-        <main>
+        <main className="">
             <header>
                 <div>
                     <div>
-                        <h1>Be the browser’s mentor, not its micromanager.</h1>
+                        <h1>Be the browser’s mentor, not its micromanager!</h1>
                         <p>
                             Give the browser some solid rules and hints, then
                             let it make the right decisions for the people that
