@@ -29,7 +29,7 @@ function App() {
             <article>
                 <div>
                     <h2>Key Foundations &amp; Principles</h2>
-                    <ul>
+                    <ul role="list">
                         <li>
                             <h3>Modern CSS with Methodologies</h3>
                             <p>
@@ -228,7 +228,7 @@ function App() {
                             the key principles. Even so, here are some useful
                             tools I use together to build flexible front-ends.
                         </p>
-                        <ul>
+                        <ul role="list">
                             <li>
                                 <div aria-hidden="true">
                                     <svg
