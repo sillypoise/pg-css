@@ -37,3 +37,37 @@ h2,
 h3 {
     max-width: theme(contentWidth.1);
 }
+
+a {
+    color: currentcolor;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+blockquote:not([class]) {
+    font-family: theme(fontFamily.serif);
+    font-size: theme(fontSize.2);
+}
+
+blockquote:not([class]) p:last-of-type {
+    font-family: theme(fontFamily.sans);
+    font-size: theme(fontSize.1);
+    font-weight: theme(fontWeight.normal);
+}
+
+svg {
+    height: 2ex;
+    width: auto;
+    flex: none;
+}
+
+:focus {
+    outline: 2px solid;
+    outline-offset: 0.3ch;
+}
+
+:target {
+    scroll-margin-top: 2ex;
+}

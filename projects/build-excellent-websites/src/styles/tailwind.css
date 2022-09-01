@@ -491,6 +491,40 @@ h3 {
   max-width: var(--content-width-1);
 }
 
+a {
+  color: currentcolor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+blockquote:not([class]) {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+}
+
+blockquote:not([class]) p:last-of-type {
+  font-family: var(--font-sans);
+  font-size: var(--step-1);
+  font-weight: 400;
+}
+
+svg {
+  height: 2ex;
+  width: auto;
+  flex: none;
+}
+
+:focus {
+  outline: 2px solid;
+  outline-offset: 0.3ch;
+}
+
+:target {
+  scroll-margin-top: 2ex;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
