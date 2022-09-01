@@ -491,14 +491,6 @@ h3 {
   max-width: var(--content-width-1);
 }
 
-a {
-  color: currentcolor;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 blockquote:not([class]) {
   font-family: var(--font-serif);
   font-size: var(--step-2);
@@ -516,6 +508,20 @@ svg {
   flex: none;
 }
 
+[role="list"] {
+  padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+  color: currentcolor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 :focus {
   outline: 2px solid;
   outline-offset: 0.3ch;
@@ -523,6 +529,22 @@ svg {
 
 :target {
   scroll-margin-top: 2ex;
+}
+
+main:focus {
+  outline: none;
+}
+
+/* Base selection styles that invert whatever colours are rendered */
+
+::-moz-selection {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+::selection {
+  background: var(--color-dark);
+  color: var(--color-light);
 }
 
 .transform {

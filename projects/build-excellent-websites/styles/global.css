@@ -38,14 +38,6 @@ h3 {
     max-width: theme(contentWidth.1);
 }
 
-a {
-    color: currentcolor;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
 blockquote:not([class]) {
     font-family: theme(fontFamily.serif);
     font-size: theme(fontSize.2);
@@ -63,6 +55,20 @@ svg {
     flex: none;
 }
 
+[role="list"] {
+    padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+    color: currentcolor;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 :focus {
     outline: 2px solid;
     outline-offset: 0.3ch;
@@ -70,4 +76,14 @@ svg {
 
 :target {
     scroll-margin-top: 2ex;
+}
+
+main:focus {
+    outline: none;
+}
+
+/* Base selection styles that invert whatever colours are rendered */
+::selection {
+    background: theme(colors.dark);
+    color: theme(colors.light);
 }
