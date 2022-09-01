@@ -225,6 +225,19 @@
         Times, serif;
   --font-mono: "Dank Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
         Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-tracking-000: -0.075ch;
+  --font-tracking-00: -0.05ch;
+  --font-tracking-0: -0.025ch;
+  --font-tracking-1: 0;
+  --font-tracking-2: 0.025ch;
+  --font-tracking: 0.1ch;
+  --font-lineheight-00: 0.95;
+  --font-lineheight-0: 1.1;
+  --font-lineheight-1: 1.25;
+  --font-lineheight-2: 1.375;
+  --font-lineheight-3: 1.5;
+  --font-lineheight-4: 1.75;
+  --font-lineheight-5: 2;
 }
 
 /* COLORS */
@@ -431,6 +444,15 @@ hr {
   :where(html) {
     scroll-behavior: smooth;
   }
+}
+
+body {
+  color: var(--color-dark);
+  background: var(--color-light);
+  font-size: var(--step-1);
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-2);
+  letter-spacing: var(--font-tracking-00);
 }
 
 .transform {

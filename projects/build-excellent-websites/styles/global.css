@@ -1,0 +1,8 @@
+body {
+    color: theme(colors.dark);
+    background: theme(colors.light);
+    font-size: theme(fontSize.1);
+    font-family: theme(fontFamily.sans);
+    line-height: theme(lineHeight.2);
+    letter-spacing: theme(letterSpacing.00);
+}

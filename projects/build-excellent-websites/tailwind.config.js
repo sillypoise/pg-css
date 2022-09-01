@@ -2,6 +2,15 @@
 module.exports = {
     content: ["./src/**/*.{ts,tsx,jsx,js}"],
     theme: {
+        colors: {
+            dark: "var(--color-dark)",
+            light: "var(--color-light)",
+            "light-glare": "var(--color-light-glare)",
+            primary: "var(--color-primary)",
+            "primary-glare": "var(--color-primary-glare",
+            secondary: "var(--color-secondary)",
+            "secondary-glare": "var(--color-secondary-glare",
+        },
         spacing: {
             "3xs": "var(--space-3xs)",
             "2xs": "var(--space-2xs)",
@@ -78,6 +87,25 @@ module.exports = {
             serif: "var(--font-serif)",
             mono: "var(--font-mono)",
         },
+        letterSpacing: {
+            "000": "var(--font-tracking-000)",
+            "00": "var(--font-tracking-00)",
+            0: "var(--font-tracking-0)",
+            1: "var(--font-tracking-1)",
+            2: "var(--font-tracking-2)",
+            3: "var(--font-tracking-3)",
+            4: "var(--font-tracking-4)",
+        },
+        lineHeight: {
+            "00": "var(--font-lineheight-00)",
+            0: "var(--font-lineheight-0)",
+            1: "var(--font-lineheight-1)",
+            2: "var(--font-lineheight-2)",
+            3: "var(--font-lineheight-3)",
+            4: "var(--font-lineheight-4)",
+            5: "var(--font-lineheight-5)",
+        },
+
         extends: {},
     },
     corePlugins: {
