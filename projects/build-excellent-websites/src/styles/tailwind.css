@@ -238,6 +238,11 @@
   --font-lineheight-3: 1.5;
   --font-lineheight-4: 1.75;
   --font-lineheight-5: 2;
+  --content-width-1: 20ch;
+  --content-width-2: 45ch;
+  --content-width-3: 60ch;
+  --content-width-4: 65ch;
+  --content-width-5: 70ch;
 }
 
 /* COLORS */
@@ -453,6 +458,37 @@ body {
   font-family: var(--font-sans);
   line-height: var(--font-lineheight-2);
   letter-spacing: var(--font-tracking-00);
+}
+
+h1,
+h2,
+h3 {
+  line-height: var(--font-lineheight-0);
+  letter-spacing: var(--font-tracking-000);
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+h2 {
+  font-size: var(--step-4);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+p,
+li,
+blockquote:not([class]) {
+  max-width: var(--content-width-4);
+}
+
+h1,
+h2,
+h3 {
+  max-width: var(--content-width-1);
 }
 
 .transform {

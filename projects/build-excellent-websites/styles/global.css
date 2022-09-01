@@ -6,3 +6,34 @@ body {
     line-height: theme(lineHeight.2);
     letter-spacing: theme(letterSpacing.00);
 }
+
+h1,
+h2,
+h3 {
+    line-height: theme(lineHeight.0);
+    letter-spacing: theme(letterSpacing.000);
+}
+
+h1 {
+    font-size: theme(fontSize.5);
+}
+
+h2 {
+    font-size: theme(fontSize.4);
+}
+
+h3 {
+    font-size: theme(fontSize.3);
+}
+
+p,
+li,
+blockquote:not([class]) {
+    max-width: theme(contentWidth.4);
+}
+
+h1,
+h2,
+h3 {
+    max-width: theme(contentWidth.1);
+}

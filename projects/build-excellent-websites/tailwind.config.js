@@ -105,7 +105,13 @@ module.exports = {
             4: "var(--font-lineheight-4)",
             5: "var(--font-lineheight-5)",
         },
-
+        contentWidth: {
+            1: "var(--content-width-1)",
+            2: "var(--content-width-2)",
+            3: "var(--content-width-3)",
+            4: "var(--content-width-4)",
+            5: "var(--content-width-5)",
+        },
         extends: {},
     },
     corePlugins: {
