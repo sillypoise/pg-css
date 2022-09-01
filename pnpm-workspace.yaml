@@ -3,3 +3,4 @@ pacakges:
     - "projects/vanilla-layout/**"
     - "projects/tailwind-normalize/**"
     - "projects/tailwind-layout/**"
+    - "projects/build-excellent-websites/**"
