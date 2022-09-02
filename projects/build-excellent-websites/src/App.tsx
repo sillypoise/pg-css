@@ -2,10 +2,10 @@ import "./styles/tailwind.css";
 
 function App() {
     return (
-        <main className="">
+        <main className="stack">
             <header>
                 <div>
-                    <div>
+                    <div className="stack">
                         <h1>Be the browser’s mentor, not its micromanager!</h1>
                         <p>
                             Give the browser some solid rules and hints, then
@@ -27,10 +27,10 @@ function App() {
                 </svg>
             </header>
             <article>
-                <div>
+                <div className="stack">
                     <h2>Key Foundations &amp; Principles</h2>
-                    <ul role="list">
-                        <li>
+                    <ul className="stack" role="list">
+                        <li className="stack">
                             <h3>Modern CSS with Methodologies</h3>
                             <p>
                                 Instead of brute-forcing your designs together
@@ -46,7 +46,7 @@ function App() {
                                 overly-specific CSS.
                             </p>
                         </li>
-                        <li>
+                        <li className="stack">
                             <h3>Fluid type &amp; Space</h3>
                             <p>
                                 Creating type scales that respond to the
@@ -57,7 +57,7 @@ function App() {
                                 size will be presented with appropriate sizes.
                             </p>
                         </li>
-                        <li>
+                        <li className="stack">
                             <h3>Flexible Layouts</h3>
                             <p>
                                 Using flexible, flexbox-based layouts, like the
@@ -74,7 +74,7 @@ function App() {
                                 consistently fail.
                             </p>
                         </li>
-                        <li>
+                        <li className="stack">
                             <h3>Progressive Enhancement</h3>
                             <p>
                                 Building up with the lowest possible
@@ -123,8 +123,8 @@ function App() {
                     </svg>
                 </div>
             </article>
-            <article>
-                <div>
+            <article className="stack">
+                <div className="stack">
                     <h2>Why though?</h2>
                     <p>
                         It was in 2010 when{" "}
@@ -208,7 +208,7 @@ function App() {
                     </p>
                 </div>
             </article>
-            <article>
+            <article className="stack">
                 <svg
                     preserveAspectRatio="none"
                     viewBox="0 0 1440 96"
@@ -217,8 +217,8 @@ function App() {
                 >
                     <path d="m0 96 80-5.3C160 85 320 75 480 64s320-21 480-21.3c160 .3 320 10.3 400 16l80 5.3V0H0v96Z"></path>
                 </svg>
-                <div>
-                    <div>
+                <div className="stack">
+                    <div className="stack">
                         <h2>Tools of the trade</h2>
                         <p>
                             Tools are just tools. They don’t really
@@ -228,8 +228,8 @@ function App() {
                             the key principles. Even so, here are some useful
                             tools I use together to build flexible front-ends.
                         </p>
-                        <ul role="list">
-                            <li>
+                        <ul role="list" className="stack">
+                            <li className="stack">
                                 <div aria-hidden="true">
                                     <svg
                                         aria-hidden="true"
@@ -306,7 +306,7 @@ function App() {
                                     simplicity, pragmatism and consistency.
                                 </p>
                             </li>
-                            <li>
+                            <li className="stack">
                                 <div aria-hidden="true">
                                     <svg
                                         viewBox="0 0 254 254"
@@ -342,7 +342,7 @@ function App() {
                                     help with responsive design.
                                 </p>
                             </li>
-                            <li>
+                            <li className="stack">
                                 <div aria-hidden="true">
                                     <svg
                                         viewBox="0 0 154 112"
@@ -385,7 +385,7 @@ function App() {
                                     <em>really</em> learn CSS layout.
                                 </p>
                             </li>
-                            <li>
+                            <li className="stack">
                                 <div aria-hidden="true">
                                     <svg
                                         viewBox="0 0 85 96"
@@ -427,7 +427,7 @@ function App() {
                                     JSON to help with design consistency.
                                 </p>
                             </li>
-                            <li>
+                            <li className="stack">
                                 <div aria-hidden="true">
                                     <svg
                                         aria-hidden="true"
@@ -460,7 +460,7 @@ function App() {
                                     you build truly responsive sites.
                                 </p>
                             </li>
-                            <li>
+                            <li className="stack">
                                 <div aria-hidden="true">
                                     <svg
                                         viewBox="0 0 254 254"
@@ -494,7 +494,7 @@ function App() {
                     <path d="m0 96 80-5.3C160 85 320 75 480 64s320-21 480-21.3c160 .3 320 10.3 400 16l80 5.3V0H0v96Z"></path>
                 </svg>
             </article>
-            <article>
+            <article className="stack">
                 <div>
                     <h2>So with all that new knowledge:</h2>
                     <p>Go Forth And Build Excellent Websites.</p>

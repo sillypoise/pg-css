@@ -264,6 +264,17 @@
   --color-secondary-muted: #ffe3e5;
 }
 
+/* UTILITY */
+
+:root {
+  /* BORDERS AND RADIUS */
+  --border-size-1: 1px;
+  --border-size-2: 2px;
+  --border-size-3: 5px;
+  --border-size-4: 10px;
+  --border-size-5: 25px;
+}
+
 /* Box sizing rules */
 
 *,
@@ -552,6 +563,23 @@ main:focus {
 ::selection {
   background: var(--color-dark);
   color: var(--color-light);
+}
+
+/* ### THE STACK ### */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stack > * + * {
+  -webkit-margin-before: var(--stack-gap, var(--space-m));
+          margin-block-start: var(--stack-gap, var(--space-m));
+}
+
+.stack:only-child {
+  block-size: 100%;
 }
 
 .transform {

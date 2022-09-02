@@ -112,6 +112,14 @@ module.exports = {
             4: "var(--content-width-4)",
             5: "var(--content-width-5)",
         },
+        borderWidth: {
+            DEFAULT: "var(--border-size-1)",
+            1: "var(--border-size-1)",
+            2: "var(--border-size-2)",
+            3: "var(--border-size-3)",
+            4: "var(--border-size-4)",
+            5: "var(--border-size-5)",
+        },
         extends: {},
     },
     corePlugins: {

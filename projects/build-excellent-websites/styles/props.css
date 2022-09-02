@@ -129,3 +129,13 @@
     --color-secondary: #ee5141;
     --color-secondary-muted: #ffe3e5;
 }
+
+/* UTILITY */
+:root {
+    /* BORDERS AND RADIUS */
+    --border-size-1: 1px;
+    --border-size-2: 2px;
+    --border-size-3: 5px;
+    --border-size-4: 10px;
+    --border-size-5: 25px;
+}

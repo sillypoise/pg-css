@@ -1,0 +1,12 @@
+/* ### THE STACK ### */
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stack > * + * {
+    margin-block-start: var(--stack-gap, theme(spacing.m));
+}
+.stack:only-child {
+    block-size: 100%;
+}
