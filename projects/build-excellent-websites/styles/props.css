@@ -1,4 +1,7 @@
+/* FLUID TYPE AND SPACE SCALE */
 :root {
+    /* FLUID TYPE SCALE */
+    /* 16-20_1.2-1.414 */
     --step--2: clamp(0.63rem, calc(0.71rem + -0.1vw), 0.69rem);
     --step--1: clamp(0.83rem, calc(0.82rem + 0.07vw), 0.88rem);
     --step-0: clamp(1rem, calc(0.93rem + 0.36vw), 1.25rem);
@@ -12,6 +15,9 @@
 }
 
 :root {
+    /* FLUID SPACE SCALE */
+    /* 16-20 */
+    /* ONE-UP PAIRS */
     --space-3xs: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem);
     --space-2xs: clamp(0.5rem, calc(0.46rem + 0.18vw), 0.63rem);
     --space-xs: clamp(0.75rem, calc(0.7rem + 0.27vw), 0.94rem);
@@ -84,11 +90,11 @@
 /* TYPOGRAPHY */
 :where(html) {
     /* TYPOGRAPHY */
-    --font-sans: "FF Mark Pro", ui-sans-serif, system-ui, -apple-system,
-        BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    --font-sans: "Neue Haas Grotesk Text Pro", ui-sans-serif, system-ui,
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: "Joanna Nova", ui-serif, Georgia, Cambria, "Times New Roman",
+    --font-serif: "Tiempos Text", ui-serif, Georgia, Cambria, "Times New Roman",
         Times, serif;
     --font-mono: "Dank Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
         Consolas, "Liberation Mono", "Courier New", monospace;
@@ -119,7 +125,7 @@
     --color-light: #f3f3f3;
     --color-light-glare: #fff;
     --color-primary: #0042bf;
-    --color-primary-glare: #d8e2f4;
+    --color-primary-muted: #d8e2f4;
     --color-secondary: #ee5141;
-    --color-secondary-glare: #ffe3e5;
+    --color-secondary-muted: #ffe3e5;
 }

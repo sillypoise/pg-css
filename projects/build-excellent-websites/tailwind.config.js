@@ -7,9 +7,9 @@ module.exports = {
             light: "var(--color-light)",
             "light-glare": "var(--color-light-glare)",
             primary: "var(--color-primary)",
-            "primary-glare": "var(--color-primary-glare",
+            "primary-muted": "var(--color-primary-muted)",
             secondary: "var(--color-secondary)",
-            "secondary-glare": "var(--color-secondary-glare",
+            "secondary-muted": "var(--color-secondary-muted)",
         },
         spacing: {
             "3xs": "var(--space-3xs)",
