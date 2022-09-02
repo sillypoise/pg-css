@@ -574,8 +574,8 @@ main:focus {
 }
 
 .stack > * + * {
-  -webkit-margin-before: var(--stack-gap, var(--space-m));
-          margin-block-start: var(--stack-gap, var(--space-m));
+  -webkit-margin-before: var(--stack-gap, 1em);
+          margin-block-start: var(--stack-gap, 1em);
 }
 
 .stack:only-child {
