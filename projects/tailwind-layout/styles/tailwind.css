@@ -501,8 +501,9 @@
     .with-icon .icon {
         margin-inline-end: var(--icon-space, 0.5em)
     }
+    /* ### THE REGION ### */
     .region {
-        padding-block: var(--region-gap, theme(spacing.3xl));
+        padding-block: var(--region-gap, theme(spacing.m));
     }
 }
 /* ### DEBUG ### */
