@@ -10,7 +10,7 @@ export function TheIcon() {
                             viewBox="0 0 10 10"
                             stroke="currentColor"
                             className="icon"
-                            stroke-width="2"
+                            strokeWidth="2"
                         >
                             <path d="M1,1 9,9 M9,1 1,9" />
                         </svg>
@@ -29,7 +29,7 @@ export function TheIcon() {
                             viewBox="0 0 10 10"
                             className="icon"
                             stroke="currentColor"
-                            stroke-width="2"
+                            strokeWidth="2"
                         >
                             <path d="M1,1 9,9 M9,1 1,9" />
                         </svg>
@@ -52,7 +52,7 @@ export function TheIcon() {
                             viewBox="0 0 10 10"
                             className="icon"
                             stroke="currentColor"
-                            stroke-width="2"
+                            strokeWidth="2"
                         >
                             <path d="M1,1 9,9 M9,1 1,9" />
                         </svg>
