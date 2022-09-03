@@ -17,6 +17,7 @@ import "./styles/tailwind.css";
 import { TheReel } from "./pages/TheReel";
 import { TheImposter } from "./pages/TheImposter";
 import { TheIcon } from "./pages/TheIcon";
+import { TheRegion } from "./pages/TheRegion";
 
 function App() {
     return (
@@ -62,6 +63,9 @@ function App() {
                     <li>
                         <Link to="/the-icon">The Icon</Link>
                     </li>
+                    <li>
+                        <Link to="/the-region">The Region</Link>
+                    </li>
                 </ul>
             </nav>
             <main>
@@ -78,6 +82,7 @@ function App() {
                     <Route path="/the-reel" element={<TheReel />} />
                     <Route path="/the-imposter" element={<TheImposter />} />
                     <Route path="/the-icon" element={<TheIcon />} />
+                    <Route path="/the-region" element={<TheRegion />} />
                 </Routes>
             </main>
         </div>
