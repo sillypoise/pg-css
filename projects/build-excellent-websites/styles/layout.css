@@ -10,3 +10,28 @@
 .stack:only-child {
     block-size: 100%;
 }
+/* ### THE GRID ### */
+.auto-grid {
+    display: grid;
+    gap: var(--grid-gap, theme(spacing.s));
+    grid-template-columns: repeat(
+        var(--grid-placement, auto-fill),
+        minmax(var(--grid-min-width, 16rem), 1fr)
+    );
+}
+.auto-grid[data-layout="50-50"] {
+    --grid-placement: auto-fit;
+    --grid-min-width: clamp(16rem, 50vw, 26rem);
+}
+.auto-grid[data-rows="masonry"] {
+    grid-template-rows: masonry;
+    align-items: start;
+}
+/* ### THE CENTER ### */
+.center {
+    box-sizing: content-box;
+    max-inline-size: var(--center-width, theme(contentWidth.4));
+    margin-inline: auto;
+    position: relative;
+    padding-inline: var(--center-padding, theme(spacing.s));
+}

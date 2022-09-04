@@ -2,7 +2,7 @@ import "./styles/tailwind.css";
 
 function App() {
     return (
-        <main className="stack">
+        <main className="stack center">
             <header>
                 <div>
                     <div className="stack">
@@ -29,8 +29,13 @@ function App() {
             <article>
                 <div className="stack">
                     <h2>Key Foundations &amp; Principles</h2>
-                    <ul className="stack" role="list">
-                        <li className="stack">
+                    <ul
+                        className="auto-grid"
+                        role="list"
+                        data-layout="50-50"
+                        data-rows="masonry"
+                    >
+                        <li className="stack card">
                             <h3>Modern CSS with Methodologies</h3>
                             <p>
                                 Instead of brute-forcing your designs together
@@ -46,7 +51,7 @@ function App() {
                                 overly-specific CSS.
                             </p>
                         </li>
-                        <li className="stack">
+                        <li className="stack card">
                             <h3>Fluid type &amp; Space</h3>
                             <p>
                                 Creating type scales that respond to the
@@ -57,7 +62,7 @@ function App() {
                                 size will be presented with appropriate sizes.
                             </p>
                         </li>
-                        <li className="stack">
+                        <li className="stack card">
                             <h3>Flexible Layouts</h3>
                             <p>
                                 Using flexible, flexbox-based layouts, like the
@@ -74,7 +79,7 @@ function App() {
                                 consistently fail.
                             </p>
                         </li>
-                        <li className="stack">
+                        <li className="stack card">
                             <h3>Progressive Enhancement</h3>
                             <p>
                                 Building up with the lowest possible
@@ -228,7 +233,7 @@ function App() {
                             the key principles. Even so, here are some useful
                             tools I use together to build flexible front-ends.
                         </p>
-                        <ul role="list" className="stack">
+                        <ul role="list" className="auto-grid features">
                             <li className="stack">
                                 <div aria-hidden="true">
                                     <svg

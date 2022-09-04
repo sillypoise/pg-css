@@ -503,7 +503,7 @@
     }
     /* ### THE REGION ### */
     .region {
-        padding-block: var(--region-gap, theme(spacing.m));
+        padding-block: var(--region-gap, theme(spacing.l->3xl));
     }
 }
 /* ### DEBUG ### */

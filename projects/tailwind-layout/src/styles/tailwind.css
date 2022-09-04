@@ -604,8 +604,9 @@
     .with-icon .icon {
         margin-inline-end: var(--icon-space, 0.5em)
     }
+    /* ### THE REGION ### */
     .region {
-        padding-block: var(--region-gap, var(--space-3xl));
+        padding-block: var(--region-gap, var(--space-l-3xl));
     }
     .debug {
         outline: var(--border-size-3) solid;
@@ -659,9 +660,6 @@
 }
     .aspect-\[4\.0\] {
         aspect-ratio: 4.0;
-}
-    .max-w-\[40ch\] {
-        max-width: 40ch;
 }
     .flex-grow {
         flex-grow: 1;
@@ -750,6 +748,10 @@
         --tw-bg-opacity: 1;
         background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
+    .bg-sky-400 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
     .bg-teal-600\/50 {
         background-color: rgb(13 148 136 / 0.5);
 }
@@ -759,10 +761,6 @@
     .bg-gray-300 {
         --tw-bg-opacity: 1;
         background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-    .bg-sky-400 {
-        --tw-bg-opacity: 1;
-        background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
     .p-\[0\] {
         padding: 0;
@@ -807,17 +805,8 @@
     .max-is-\[50ch\] {
         max-inline-size: 50ch;
 }
-    .max-is-\[40ch\] {
-        max-inline-size: 40ch;
-}
     .max-is-\[60ch\] {
         max-inline-size: 60ch;
-}
-    .mlb-4xl {
-        margin-block: var(--space-4xl);
-}
-    .mlb-xl {
-        margin-block: var(--space-xl);
 }
     .mbe-auto {
         margin-block-end: auto;
@@ -836,9 +825,6 @@
 }
     .plb-\[\*\] {
         padding-block: *;
-}
-    .pli-3xl {
-        padding-inline: var(--space-3xl);
 }
     .pbs-2xl {
         padding-block-start: var(--space-2xl);
@@ -921,9 +907,6 @@
     .\[--reel-border\:0\] {
         --reel-border: 0;
 }
-    .\[--region-gap\:theme\(spacing\.xs\)\] {
-        --region-gap: var(--space-xs);
-}
     .\[--sidebar-width\:theme\(spacing\.6xl\)\] {
         --sidebar-width: var(--space-6xl);
 }
@@ -938,15 +921,6 @@
 }
     .\[--switcher-threshold\:25rem\] {
         --switcher-threshold: 25rem;
-}
-    .\[--region-gap\:theme\(spacing\.s\)\] {
-        --region-gap: var(--space-s);
-}
-    .\[--region-gap\:theme\(spacing\.l\)\] {
-        --region-gap: var(--space-l);
-}
-    .\[--region-gap\:theme\(spacing\.2xl\)\] {
-        --region-gap: var(--space-2xl);
 }
     /* ### TW NORMALIZE ### */
     /* ### LAYOUT ### */

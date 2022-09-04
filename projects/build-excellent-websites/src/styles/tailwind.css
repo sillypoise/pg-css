@@ -500,13 +500,13 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-width: var(--content-width-4);
+  max-inline-size: var(--content-width-4);
 }
 
 h1,
 h2,
 h3 {
-  max-width: var(--content-width-1);
+  max-inline-size: var(--content-width-1);
 }
 
 blockquote:not([class]) {
@@ -580,6 +580,69 @@ main:focus {
 
 .stack:only-child {
   block-size: 100%;
+}
+
+/* ### THE GRID ### */
+
+.auto-grid {
+  display: grid;
+  gap: var(--grid-gap, var(--space-s));
+  grid-template-columns: repeat(
+        var(--grid-placement, auto-fill),
+        minmax(var(--grid-min-width, 16rem), 1fr)
+    );
+}
+
+.auto-grid[data-layout="50-50"] {
+  --grid-placement: auto-fit;
+  --grid-min-width: clamp(16rem, 50vw, 26rem);
+}
+
+.auto-grid[data-rows="masonry"] {
+  grid-template-rows: masonry;
+  align-items: start;
+}
+
+/* ### THE CENTER ### */
+
+.center {
+  box-sizing: content-box;
+  max-inline-size: var(--center-width, var(--content-width-4));
+  margin-inline: auto;
+  position: relative;
+  padding-inline: var(--center-padding, var(--space-s));
+}
+
+.card {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: var(--space-m-l);
+  border-radius: 0.5rem;
+  max-inline-size: unset;
+}
+
+.features {
+  --grid-placement: auto-fit;
+  --grid-min-width: clamp(16rem, 33%, 20rem);
+  --grid-gap: var(--space-l-xl);
+  --stack-gap: var(--space-s);
+  text-align: center;
+}
+
+.features svg {
+  display: block;
+  margin-inline: auto;
+  height: 4em;
+}
+
+.features a {
+  text-decoration: none;
+}
+
+.features a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  text-underline-offset: 8px;
 }
 
 .transform {

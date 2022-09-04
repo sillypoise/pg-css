@@ -29,13 +29,13 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-    max-width: theme(contentWidth.4);
+    max-inline-size: theme(contentWidth.4);
 }
 
 h1,
 h2,
 h3 {
-    max-width: theme(contentWidth.1);
+    max-inline-size: theme(contentWidth.1);
 }
 
 blockquote:not([class]) {

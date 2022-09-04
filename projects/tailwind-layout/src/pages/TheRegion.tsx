@@ -22,7 +22,7 @@ function TheRegion() {
                 reprehenderit repudiandae? Tempore eveniet porro nisi vero harum
                 optio soluta fugit nobis expedita esse. Minus illo
             </p>
-            <div className="region [--region-gap:theme(spacing.2xl)] bg-sky-400 max-is-[60ch] rounded-md">
+            <div className="region bg-sky-400 max-is-[60ch] rounded-md">
                 <p className="text-4 center pli-xl">
                     I want this to feel like a distinct region from the rest of
                     the flowing content. A palm tree because why not? 🌴
