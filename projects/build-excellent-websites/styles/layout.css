@@ -19,7 +19,7 @@
         minmax(var(--grid-min-width, 16rem), 1fr)
     );
 }
-.auto-grid[data-layout="50-50"] {
+.auto-grid[data-layout="2/2"] {
     --grid-placement: auto-fit;
     --grid-min-width: clamp(16rem, 50vw, 26rem);
 }
