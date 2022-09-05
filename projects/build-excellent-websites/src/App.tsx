@@ -2,7 +2,7 @@ import "./styles/tailwind.css";
 
 function App() {
     return (
-        <main className="stack center">
+        <main className="stack center prose">
             <header>
                 <div>
                     <div className="stack">

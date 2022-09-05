@@ -1,3 +1,4 @@
+/* ### CARD ### */
 .card {
     background: theme(colors.dark);
     color: theme(colors.light);
@@ -5,6 +6,11 @@
     border-radius: theme(borderRadius.lg);
     max-inline-size: unset;
 }
+.card ::selection {
+    color: theme(colors.dark);
+    background: theme(colors.secondary);
+}
+/* ### FEATURES ### */
 .features {
     --grid-placement: auto-fit;
     --grid-min-width: clamp(16rem, 33%, 20rem);
@@ -24,4 +30,18 @@
     text-decoration: underline;
     text-decoration-thickness: theme(textDecorationThickness.8);
     text-underline-offset: theme(textUnderlineOffset.8);
+}
+/* ### PROSE ### */
+/* kind of pseudo global styles tho */
+.prose {
+    --stack-gap: var(--space-l-xl);
+    --center-width: 65ch;
+}
+.prose :is(h2, h3, h4) > * + * {
+    --flow-space: var(--space-s-m);
+}
+.prose blockquote :last-child {
+    font-family: theme(fontFamily.sans);
+    font-style: normal;
+    font-size: var(--step-1);
 }

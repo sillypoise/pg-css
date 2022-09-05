@@ -613,6 +613,8 @@ main:focus {
   padding-inline: var(--center-padding, var(--space-s));
 }
 
+/* ### CARD ### */
+
 .card {
   background: var(--color-dark);
   color: var(--color-light);
@@ -620,6 +622,18 @@ main:focus {
   border-radius: 0.5rem;
   max-inline-size: unset;
 }
+
+.card ::-moz-selection {
+  color: var(--color-dark);
+  background: var(--color-secondary);
+}
+
+.card ::selection {
+  color: var(--color-dark);
+  background: var(--color-secondary);
+}
+
+/* ### FEATURES ### */
 
 .features {
   --grid-placement: auto-fit;
@@ -643,6 +657,25 @@ main:focus {
   text-decoration: underline;
   text-decoration-thickness: 8px;
   text-underline-offset: 8px;
+}
+
+/* ### PROSE ### */
+
+/* kind of pseudo global styles tho */
+
+.prose {
+  --stack-gap: var(--space-l-xl);
+  --center-width: 65ch;
+}
+
+.prose :is(h2, h3, h4) > * + * {
+  --flow-space: var(--space-s-m);
+}
+
+.prose blockquote :last-child {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: var(--step-1);
 }
 
 .transform {
