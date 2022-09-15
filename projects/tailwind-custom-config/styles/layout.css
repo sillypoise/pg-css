@@ -1,5 +1,4 @@
 /* ### THE STACK ### */
-
 .stack {
     display: flex;
     flex-direction: column;
@@ -11,18 +10,17 @@
 .stack:only-child {
     block-size: 100%;
 }
-
 /* ### THE CENTER ### */
 .center {
     box-sizing: content-box;
     max-inline-size: var(--center-width, theme(contentWidth.4));
     margin-inline: auto;
     position: relative;
-    padding-inline: var(--center-padding, theme(spacing.s));
+    padding-inline: var(--center-padding, theme(spacing.s-l));
 }
 /* ### THE BOX ### */
 .box {
-    padding: theme(spacing.m);
+    padding: theme(spacing.s-l);
     border: theme(borderWidth.2) solid;
     outline: theme(borderWidth.3) transparent;
     outline-offset: calc(theme(borderWidth.3) * -1);
@@ -87,8 +85,7 @@
 .switcher {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--switcher-gap, theme(spacing.s));
-    /* --threshold: 30rem; */
+    gap: var(--switcher-gap, theme(spacing.s-l));
 }
 .switcher > * {
     flex-grow: 1;
@@ -102,7 +99,7 @@
     padding: 0;
 }
 .cover > * {
-    margin-block: var(--cover-spacing, theme(spacing.xs));
+    margin-block: var(--cover-spacing, theme(spacing.xs-m));
 }
 .cover-target {
     margin-block: auto;
@@ -131,7 +128,7 @@
 /* ### THE REEL ### */
 .reel {
     display: flex;
-    gap: var(--reel-gap, theme(spacing.s));
+    gap: var(--reel-gap, theme(spacing.s-l));
     overflow-x: auto;
     overflow-y: hidden;
     block-size: auto;
@@ -143,7 +140,7 @@
 }
 .reel > * {
     flex: 0 0 var(--reel-item-width, theme(spacing.5xl));
-    margin: var(--reel-item-margin, theme(spacing.s));
+    margin: var(--reel-item-margin, theme(spacing.s-l));
     margin-inline-end: 0;
 }
 .reel::after {
