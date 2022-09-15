@@ -1,0 +1,49 @@
+/* COLOR SCHEMES */
+
+/* LIGHT SCHEME */
+:where(:root) {
+    --background: theme(colors.scheme.light.background);
+    --on-background: theme(colors.scheme.light.on-background);
+    --surface-0: theme(colors.scheme.light.neutral.surface[0]);
+    --surface-1: theme(colors.scheme.light.neutral.surface[1]);
+    --surface-2: theme(colors.scheme.light.neutral.surface[2]);
+    --surface-3: theme(colors.scheme.light.neutral.surface[3]);
+    --surface-4: theme(colors.scheme.light.neutral.surface[4]);
+    --on-surface-0: theme(colors.scheme.light.neutral.on-surface[0]);
+    --on-surface-1: theme(colors.scheme.light.neutral.on-surface[1]);
+    --primary: theme(colors.scheme.light.primary);
+    --secondary: theme(colors.scheme.light.secondary);
+}
+
+/* DARK SCHEME */
+@media (prefers-color-scheme: dark) {
+    :where(:root) {
+        --background: theme(colors.scheme.dark.background);
+        --on-background: theme(colors.scheme.dark.on-background);
+        --surface-0: theme(colors.scheme.dark.neutral.surface[0]);
+        --surface-1: theme(colors.scheme.dark.neutral.surface[1]);
+        --surface-2: theme(colors.scheme.dark.neutral.surface[2]);
+        --surface-3: theme(colors.scheme.dark.neutral.surface[3]);
+        --surface-4: theme(colors.scheme.dark.neutral.surface[4]);
+        --on-surface-0: theme(colors.scheme.dark.neutral.on-surface[0]);
+        --on-surface-1: theme(colors.scheme.dark.neutral.on-surface[1]);
+        --primary: theme(colors.scheme.dark.primary);
+        --secondary: theme(colors.scheme.dark.secondary);
+    }
+}
+
+/* DATA CONTROLLED SCHEMES */
+[data-scheme="light"] {
+    --background: theme(colors.scheme.light.background);
+    --on-background: theme(colors.scheme.light.on-background);
+}
+
+[data-scheme="dark"] {
+    --background: theme(colors.scheme.dark.background);
+    --on-background: theme(colors.scheme.dark.on-background);
+}
+
+[data-scheme="nord"] {
+    /* --background: theme(colors.scheme.nord.background);
+    --on-background: theme(colors.scheme.nord.on-background); */
+}

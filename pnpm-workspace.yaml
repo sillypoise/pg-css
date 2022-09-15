@@ -4,3 +4,4 @@ pacakges:
     - "projects/tailwind-normalize/**"
     - "projects/tailwind-layout/**"
     - "projects/build-excellent-websites/**"
+    - "projects/tailwind-custom-config/**"
