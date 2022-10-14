@@ -565,6 +565,73 @@ main:focus {
   color: var(--color-light);
 }
 
+/*  ### CODE ### */
+
+code,
+kbd,
+samp,
+pre {
+  /* color: theme(colors.dark); */
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: var(--step-1);
+  max-inline-size: -webkit-max-content;
+  max-inline-size: -moz-max-content;
+  max-inline-size: max-content;
+  min-inline-size: 0;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  text-align: left;
+  line-height: var(--font-lineheight-3);
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
+pre {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  border-radius: 0.5rem;
+}
+
+:not(pre) > code {
+  color: var(--color-dark);
+  padding-block: 0.1em;
+  padding-inline: 0.2em;
+  border-radius: 0.375rem;
+}
+
+pre code::before {
+  content: none;
+}
+
+pre code::after {
+  content: none;
+}
+
+code::before {
+  content: "`";
+}
+
+code::after {
+  content: "`";
+}
+
+kbd,
+var {
+  padding-block: 0.01em;
+  padding-inline: 0.4em;
+  border: solid 2px;
+  border-radius: 0.375rem;
+}
+
 /* ### THE STACK ### */
 
 .stack {
